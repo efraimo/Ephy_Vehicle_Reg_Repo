@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class=""><!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Benue Vehicle Registration and Tracking System</title>
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/vrts_icon.jpg" />
+
+    <!-- For iPhone 4 Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+
+    <!-- For iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+
+    <!-- For iPhone: -->
+    <link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Library - Google Font Familys -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700"
+        rel="stylesheet">
+
+    <!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+
+    <!-- Custom - Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/shortcode.css">
+
+    <!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .form_field_border {
+            border-color: #666 !important;
+            color: #333 !important;
+        }
+    </style>
+
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+    <div class="main-container">
+        <!-- Loader -->
+        <div id="site-loader" class="load-complete">
+            <div class="loader">
+                <div class="loader-inner ball-clip-rotate">
+                    <div></div>
+                </div>
+            </div>
+        </div><!-- Loader /- -->
+
+        <!-- Header Section -->
+        <header id="header" class="header-section container-fluid no-padding">
+            <!-- Container -->
+            <div class="container">
+                <!-- Top Header -->
+                <div class="top-header container-fluid no-padding">
+                    <div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+                        <a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Click to</span><b>Chat</b></a>
+                        <a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Call
+                                at</span><b>1-800-23-456-7890</b></a>
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- Top Header /- -->
+                <!-- nav -->
+                <nav class="navbar navbar-default ow-navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar"
+                            data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"><img src="images/logo1.jpg" alt="Logo" /></a>
+                    </div>
+                    <!-- Menu Icon -->
+					<div class="menu-icon">
+						<div >
+							<ul class="nav ">
+								<li><a href="login.html" title="Login / register">Login/Register</a></li>
+							</ul>
+								
+							<!-- <a href="#" id="search" title="Search"><img src="images/search-ic.png" alt="Search" /></a> -->
+						</div>
+					</div>
+					<!-- Menu Icon /- -->
+                    <div class="navbar-collapse collapse navbar-left" id="navbar">
+                        <ul class="nav navbar-nav">
+
+                            <!-- <li class="active dropdown">
+								<a href="index.html" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="index.html" title="homepage 1">homepage 1</a></li>
+									<li><a href="index2.html" title="homepage 2">homepage 2</a></li>
+								</ul>
+							</li> -->
+
+
+                            <li><a href="index.html" title="About">Home</a></li>
+                            <li><a href="about.html" title="About">About</a></li>
+                            <li><a href="vreg.html" title="Vehicle Registration">Vehicle Registration</a></li>
+                            <li><a href="renewals.html" title="Renew vehicle documents">Renewals</a></li>
+                            <li><a href="change_ownership.html" title="Change vehicle ownership">Change Ownership</a></li>
+                            <!-- <li class="dropdown">
+								<a href="inventory.html" title="Inventory" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">inventory</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="inventory-single.html" title="Inventory Single">Inventory Single</a></li>
+								</ul>
+							</li> -->
+                            <!-- <li><a href="services.html" title="Services">Services</a></li>
+							<li class="dropdown">
+								<a href="blog.html" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="blog-post.html" title="Blog Single">Blog Single</a></li>
+								</ul>
+							</li> -->
+                            <!-- <li class="dropdown">
+								<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Pages">Pages</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="404.html" title="404">404</a></li>
+								</ul>
+							</li> -->
+                            <li><a href="contactus.html" title="Contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+
+
+                </nav><!-- nav /- -->
+                <!-- Search Box -->
+                <div class="search-box">
+                    <span><i class="icon_close"></i></span>
+                    <form><input type="text" class="form-control" placeholder="Enter a keyword and press enter..." />
+                    </form>
+                </div><!-- Search Box /- -->
+            </div><!-- Container /- -->
+        </header><!-- Header Section /- -->
+
+
+        <main>
+
+            <!-- Page Banner -->
+            <div class="container-fluid no-padding page-banner">
+                <div class="padding-90"></div>
+                <!-- Container -->
+                <div class="container">
+                    <h3>Vehicle Renewal</h3>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Renew Your Vehicle Documents </li>
+                    </ol>
+                </div><!-- Container /- -->
+                <div class="padding-100"></div>
+            </div><!-- Page Banner /- -->
+
+            <div class="section-padding"></div>
+
+            <!-- Contact Section -->
+            <div class="container-fluid no-padding contact-section">
+                <!-- Container -->
+                <div class="container">
+                    <h3>Vehicle Renewal Details</h3>
+                    <form class="row">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <select id="vehicleOwnerId" name="vehicleOwnerName" class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value=""> -- Owner means of Identotfication -- </option>
+                                <option value="Company RC Number">Company RC Number</option>
+                                <option value="Driver License">Driver's License</option>
+                                <option value="International Passport">International Passport</option>
+                                <option value="National ID Card">National ID Card</option>
+                                <option value="Tax Clearance Number">Tax Clearance Number</option>
+                                <option value="Tax Identification Number">Tax Identification Number</option>
+                            </select>
+
+                            <select class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value=""> -- Select Title --</option>
+                                <option value="Mr.">Mr. </option>
+                                <option value="Miss">Miss </option>
+                                <option value="Ms">Ms </option>
+                                <option value="Mrs.">Mrs. </option>
+                                <option value="Dr.">Dr. </option>
+                                <option value="Prof.">Prof. </option>
+                                <option value="Engr.">Engr. </option>
+                                <option value="Chief">Chief. </option>
+                                <option value="Rev.">Rev. </option>
+                                <option value="Alhaji.">Alhaji. </option>
+                                <option value="Imam.">Imam. </option>
+                                <option value="Pastor.">Pastor. </option>
+                                <option value="Engineer.">Engineer. </option>
+                            </select>
+
+                            <input type="text" name="firstName" id="firstNameId" placeholder="First Name"
+                                class="form-control form_field_border" required="">
+
+                            <input type="text" name="lastName" id="lastNameId" placeholder="Last Name"
+                                class="form-control form_field_border" required="">
+
+                            <input type="text" name="numberName" id="numberId" placeholder="Owner Identification Number"
+                                class="form-control form_field_border" required="">
+
+                            <input type="email" name="emailName" id="emailId" placeholder="Owner Email"
+                                class="form-control form_field_border" required="">
+
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <textarea name="owner-message" id="owner_messageId" placeholder="Owner Address" rows="2"
+                                    class="form-control form_field_border"></textarea>
+
+
+                                <select class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                    <option value=""> -- Select State --</option>
+                                    <option value="ABIA">ABIA</option>
+                                    <option value="ADAMAWA">ADAMAWA</option>
+                                    <option value="AKWA IBOM">AKWA IBOM</option>
+                                    <option value="ANAMBRA">ANAMBRA</option>
+                                    <option value="BAUCHI">BAUCHI</option>
+                                    <option value="BAYELSA">BAYELSA</option>
+                                    <option value="BENUE">BENUE</option>
+                                    <option value="BORNO">BORNO</option>
+                                    <option value="CROSS RIVER">CROSS RIVER</option>
+                                    <option value="DELTA">DELTA</option>
+                                    <option value="EBONYI">EBONYI</option>
+                                    <option value="EDO">EDO</option>
+                                    <option value="EKITI">EKITI</option>
+                                    <option value="ENUGU">ENUGU</option>
+                                    <option value="FCT">FCT</option>
+                                    <option value="FEDERAL GOVERNMENT">FEDERAL GOVERNMENT</option>
+                                    <option value="GOMBE">GOMBE</option>
+                                    <option value="IMO">IMO</option>
+                                    <option value="JIGAWA">JIGAWA</option>
+                                    <option value="KADUNA">KADUNA</option>
+                                    <option value="KANO">KANO</option>
+                                    <option value="KATSINA">KATSINA</option>
+                                    <option value="KEBBI">KEBBI</option>
+                                    <option value="KOGI">KOGI</option>
+                                    <option value="KWARA">KWARA</option>
+                                    <option value="LAGOS">LAGOS</option>
+                                    <option value="NASSARAWA">NASSARAWA</option>
+                                    <option value="NIGER">NIGER</option>
+                                    <option value="OGUN">OGUN</option>
+                                    <option value="ONDO">ONDO</option>
+                                    <option value="OSUN">OSUN</option>
+                                    <option value="OYO">OYO</option>
+                                    <option value="PLATEAU">PLATEAU</option>
+                                    <option value="RIVERS">RIVERS</option>
+                                    <option value="SOKOTO">SOKOTO</option>
+                                    <option value="TARABA">TARABA</option>
+                                    <option value="YOBE">YOBE</option>
+                                    <option value="ZAMFARA">ZAMFARA</option>
+                                </select>
+                                <input type="text" name="chasisNoName" id="chasisNoId" placeholder="Chasis number"
+                                    class="form-control form_field_border" required="">
+
+                                <select class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                    <option value="">-- Select LGA --</option>
+                                    <option value="1">ABA NORTH</option>
+                                    <option value="2">ABA SOUTH</option>
+                                    <option value="3">AROCHUKWU</option>
+                                    <option value="4">BENDE</option>
+                                    <option value="5">IKWUANO</option>
+                                    <option value="6">ISIALA NGWA NORTH</option>
+                                    <option value="7">ISIALA NGWA SOUTH</option>
+                                    <option value="8">ISUIKWUATO</option>
+                                    <option value="9">UMUNNEOCHI</option>
+                                    <option value="10">OBIOMA NGWA</option>
+                                    <option value="11">OHAFIA</option>
+                                    <option value="12">OSISIOMA</option>
+                                    <option value="13">UGWUNAGBO</option>
+                                    <option value="14">UKWA EAST</option>
+                                    <option value="15">UKWA WEST</option>
+                                    <option value="16">UMUAHIA NORTH</option>
+                                    <option value="17">UMUAHIA SOUTH</option>
+                                    <option value="18">DEMSA</option>
+                                    <option value="19">FUFORE</option>
+                                    <option value="20">GANYE</option>
+                                    <option value="21">GIREI</option>
+                                    <option value="22">GOMBI</option>
+                                    <option value="23">GUYUK</option>
+                                    <option value="24">HONG</option>
+                                    <option value="25">JADA</option>
+                                    <option value="26">YOLA NORTH</option>
+                                    <option value="27">LAMURDE</option>
+                                    <option value="28">MADAGALI</option>
+                                    <option value="29">MAIHA</option>
+                                    <option value="30">MAYO-BELWA</option>
+                                    <option value="31">MICHIKA</option>
+                                    <option value="32">MUBI</option>
+                                    <option value="33">MUBI SOUTH</option>
+                                    <option value="34">NUMAN</option>
+                                    <option value="35">SHELLENG</option>
+                                    <option value="36">SONG</option>
+                                    <option value="37">TOUNGO</option>
+                                    <option value="38">YOLA SOUTH</option>
+                                    <option value="39">ABAK</option>
+                                    <option value="40">EASTERN OBOLO</option>
+                                    <option value="41">EKET</option>
+                                    <option value="42">EKPE-ATAI</option>
+                                    <option value="43">ESSIEN UDIM</option>
+                                    <option value="44">ETIM EKPO</option>
+                                    <option value="45">ETINAN</option>
+                                    <option value="46">IBENO</option>
+                                    <option value="47">IBESIKPO ASUTAN</option>
+                                    <option value="48">IBIONO IBOM</option>
+                                    <option value="49">IKA</option>
+                                    <option value="50">IKONO</option>
+                                    <option value="51">IKOT ABASI</option>
+                                    <option value="52">IKOT EKPENE</option>
+                                    <option value="53">INI</option>
+                                    <option value="54">ITU</option>
+                                    <option value="55">MBO</option>
+                                    <option value="56">MKPAT ENIN</option>
+                                    <option value="57">NSIT IBOM</option>
+                                    <option value="58">NSIT UBIUM</option>
+                                    <option value="59">OBAT AKARA</option>
+                                    <option value="60">OKOBO</option>
+                                    <option value="61">ONNA</option>
+                                    <option value="62">ORON</option>
+                                    <option value="63">ORUK ANAM</option>
+                                    <option value="64">UNDUNG UKO</option>
+                                    <option value="65">UKANAFUN</option>
+                                    <option value="66">UQUO-IBENO</option>
+                                    <option value="67">URUAN</option>
+                                    <option value="68">URUE OFFONG/ORUKO</option>
+                                    <option value="69">UYO</option>
+                                    <option value="70">AGUATA</option>
+                                    <option value="71">ANAMBRA EAST</option>
+                                    <option value="72">ANAMBRA WEST</option>
+                                    <option value="73">AWKA NORTH</option>
+                                    <option value="74">AWKA SOUTH</option>
+                                    <option value="75">AGHAMELUM</option>
+                                    <option value="76">DUNUKOFIA</option>
+                                    <option value="77">EKWUSIGO</option>
+                                    <option value="78">IDEMILI NORTH</option>
+                                    <option value="79">IDEMILI SOUTH</option>
+                                    <option value="80">IHIALA</option>
+                                    <option value="81">NJIKOKA</option>
+                                    <option value="82">NNEWI NORTH</option>
+                                    <option value="83">NNEWI SOUTH</option>
+                                    <option value="84">OGBARU</option>
+                                    <option value="85">ONITSHA NORTH</option>
+                                    <option value="86">ONITSHA SOUTH</option>
+                                    <option value="87">ORUMBA NORTH</option>
+                                    <option value="88">ORUMBA SOUTH</option>
+                                    <option value="89">OYI</option>
+                                    <option value="90">ALKALERI</option>
+                                    <option value="91">BAUCHI</option>
+                                    <option value="92">BOGORO</option>
+                                    <option value="93">DAMBAM</option>
+                                    <option value="94">DARAZO</option>
+                                    <option value="95">DASS</option>
+                                    <option value="96">GAMAWA</option>
+                                    <option value="97">GANJUWA</option>
+                                    <option value="98">GIADE</option>
+                                    <option value="99">ITAS/GADAU</option>
+                                    <option value="100">JAMA'ARE</option>
+                                    <option value="101">KATAGUM</option>
+                                    <option value="102">KIRFI</option>
+                                    <option value="103">MISAU</option>
+                                    <option value="104">NINGI</option>
+                                    <option value="105">SHIRA</option>
+                                    <option value="106">TAFAWA-BALEWA</option>
+                                    <option value="107">TORO</option>
+                                    <option value="108">WARJI</option>
+                                    <option value="109">ZAKI</option>
+                                    <option value="110">BRASS</option>
+                                    <option value="111">EKEREMOR</option>
+                                    <option value="112">KOLOKUMA/OPOKUMA</option>
+                                    <option value="113">NEMBE</option>
+                                    <option value="114">OGBIA</option>
+                                    <option value="115">SAGBAMA</option>
+                                    <option value="116">SOUTHERN IJAW</option>
+                                    <option value="117">YENAGOA</option>
+                                    <option value="118">ADO</option>
+                                    <option value="119">AGATU</option>
+                                    <option value="120">APA</option>
+                                    <option value="121">BUKURU</option>
+                                    <option value="122">GBOKO</option>
+                                    <option value="123">GUMA</option>
+                                    <option value="124">GWER</option>
+                                    <option value="125">GWER WEST</option>
+                                    <option value="126">KATSINA-ALA</option>
+                                    <option value="127">KONSHISHA</option>
+                                    <option value="128">KWANDE</option>
+                                    <option value="129">LOGO</option>
+                                    <option value="130">MAKURDI</option>
+                                    <option value="131">OBI</option>
+                                    <option value="132">OGBADIBO</option>
+                                    <option value="133">OHIMINI</option>
+                                    <option value="134">OJU</option>
+                                    <option value="135">OKPOKWU</option>
+                                    <option value="136">OTUKPO</option>
+                                    <option value="137">TARKA</option>
+                                    <option value="138">UKUM</option>
+                                    <option value="139">USHONGO</option>
+                                    <option value="140">VANDEIKYA</option>
+                                    <option value="141">ABADAM</option>
+                                    <option value="142">ASKIRA UBA</option>
+                                    <option value="143">BAMA</option>
+                                    <option value="144">BAYO</option>
+                                    <option value="145">BIU</option>
+                                    <option value="146">CHIBOK</option>
+                                    <option value="147">DAMBOA</option>
+                                    <option value="148">DIKWA</option>
+                                    <option value="149">GUBIO</option>
+                                    <option value="150">GUZAMALA</option>
+                                    <option value="151">GWOZA</option>
+                                    <option value="152">HAWUL</option>
+                                    <option value="153">JERE</option>
+                                    <option value="154">KAGA</option>
+                                    <option value="155">KALA/BALGE</option>
+                                    <option value="156">KONDUGA</option>
+                                    <option value="157">KUKAWA</option>
+                                    <option value="158">KWAYA</option>
+                                    <option value="159">MAFA</option>
+                                    <option value="160">MAGUMERI</option>
+                                    <option value="161">MAIDUGURI</option>
+                                    <option value="162">MARTE</option>
+                                    <option value="163">MOBBAR</option>
+                                    <option value="164">MONGUNO</option>
+                                    <option value="165">NGALA</option>
+                                    <option value="166">NGANZAI</option>
+                                    <option value="167">SHANI</option>
+                                    <option value="168">ABI</option>
+                                    <option value="169">AKAMKPA</option>
+                                    <option value="170">AKPABUYO</option>
+                                    <option value="171">BAKASSI</option>
+                                    <option value="172">BEKWARA</option>
+                                    <option value="173">BIASE</option>
+                                    <option value="174">BOKI</option>
+                                    <option value="175">CALABAR MUNICIPAL</option>
+                                    <option value="176">CALABAR SOUTH</option>
+                                    <option value="177">ETUNG</option>
+                                    <option value="178">IKOM</option>
+                                    <option value="179">OBANLIKU</option>
+                                    <option value="180">OBUBRA</option>
+                                    <option value="181">OBUDU</option>
+                                    <option value="182">ODUKPANI</option>
+                                    <option value="183">OGOJA</option>
+                                    <option value="184">YAKURR</option>
+                                    <option value="185">YALA</option>
+                                    <option value="186">ANIOCHA NORTH</option>
+                                    <option value="187">ANIOCHA SOUTH</option>
+                                    <option value="188">BOMADI</option>
+                                    <option value="189">BURUTU</option>
+                                    <option value="190">ETHIOPE EAST</option>
+                                    <option value="191">ETHIOPE WEST</option>
+                                    <option value="192">IKA NORTH</option>
+                                    <option value="193">IKA NORTH EAST</option>
+                                    <option value="194">ISOKO</option>
+                                    <option value="195">ISOKO SOUTH</option>
+                                    <option value="196">NDOKWA EAST</option>
+                                    <option value="197">NDOKWA WEST</option>
+                                    <option value="198">OKPE</option>
+                                    <option value="199">OSHIMILI NORTH</option>
+                                    <option value="200">OSHIMILI SOUTH</option>
+                                    <option value="201">PATANI</option>
+                                    <option value="202">SAPELE</option>
+                                    <option value="203">UDU</option>
+                                    <option value="204">UGHELLI NORTH</option>
+                                    <option value="205">UGHELLI SOUTH</option>
+                                    <option value="206">UKWUANI</option>
+                                    <option value="207">UVWIE</option>
+                                    <option value="208">WARRI EAST</option>
+                                    <option value="209">WARRI NORTH</option>
+                                    <option value="210">WARRI SOUTH-WEST</option>
+                                    <option value="211">ABAKALIKI</option>
+                                    <option value="212">AFIKPO NORTH</option>
+                                    <option value="213">AFIKPO SOUTH</option>
+                                    <option value="214">EBONYI</option>
+                                    <option value="215">EZZA NORTH</option>
+                                    <option value="216">EZZA SOUTH</option>
+                                    <option value="217">IKWO</option>
+                                    <option value="218">ISHIELU</option>
+                                    <option value="219">IVO</option>
+                                    <option value="220">IZZI</option>
+                                    <option value="221">OHAOZARA</option>
+                                    <option value="222">OHAUKWU</option>
+                                    <option value="223">ONICHA</option>
+                                    <option value="224">AKOKO EDO</option>
+                                    <option value="225">EGOR</option>
+                                    <option value="226">ESAN CENTRAL</option>
+                                    <option value="227">ESAN NORTH EAST</option>
+                                    <option value="228">ESAN SOUTH EAST</option>
+                                    <option value="229">ESAN WEST</option>
+                                    <option value="230">ETSAKO CENTRAL</option>
+                                    <option value="231">ETSAKO EAST</option>
+                                    <option value="232">ETSAKO WEST</option>
+                                    <option value="233">IGUEBEN</option>
+                                    <option value="234">IKPOBA OKHA</option>
+                                    <option value="235">OREDO</option>
+                                    <option value="236">ORHIONWON</option>
+                                    <option value="237">OVIA NORTH EAST</option>
+                                    <option value="238">OVIA SOUTH WEST</option>
+                                    <option value="239">OWAN EAST</option>
+                                    <option value="240">OWAN WEST</option>
+                                    <option value="241">UHUNMWONDE</option>
+                                    <option value="242">ADO-EKITI</option>
+                                    <option value="243">GBONYIN</option>
+                                    <option value="244">EFON-ALAAYE</option>
+                                    <option value="245">EKITI EAST</option>
+                                    <option value="246">EKITI SOUTH WEST</option>
+                                    <option value="247">EKITI WEST</option>
+                                    <option value="248">EMURE</option>
+                                    <option value="249">IDO-OSI</option>
+                                    <option value="250">IJERO</option>
+                                    <option value="251">IKERE</option>
+                                    <option value="252">IKOLE</option>
+                                    <option value="253">ILEJE MEJI</option>
+                                    <option value="254">IREPODUN/IFELODUN</option>
+                                    <option value="255">ISE ORUN</option>
+                                    <option value="256">MOBA</option>
+                                    <option value="257">OYE</option>
+                                    <option value="258">AWGU</option>
+                                    <option value="259">ANINRI</option>
+                                    <option value="260">ENUGU EAST</option>
+                                    <option value="261">ENUGU NORTH</option>
+                                    <option value="262">ENUGU SOUTH</option>
+                                    <option value="263">EZEAGU</option>
+                                    <option value="264">IGBO ETITI</option>
+                                    <option value="265">IGBO EZE NORTH</option>
+                                    <option value="266">IGBO EZE SOUTH</option>
+                                    <option value="267">ISI UZO</option>
+                                    <option value="268">NKANU</option>
+                                    <option value="269">NKANU EAST</option>
+                                    <option value="270">NSUKKA</option>
+                                    <option value="271">OJI RIVER</option>
+                                    <option value="272">UDENU</option>
+                                    <option value="273">UDI</option>
+                                    <option value="274">UZO UWANI</option>
+                                    <option value="275">AKKO</option>
+                                    <option value="276">BALANGA</option>
+                                    <option value="277">BILLIRI</option>
+                                    <option value="278">DUKKU</option>
+                                    <option value="279">FUNAKAYE</option>
+                                    <option value="280">GOMBE</option>
+                                    <option value="281">KALTUNGO</option>
+                                    <option value="282">KWANI</option>
+                                    <option value="283">NAFADA</option>
+                                    <option value="284">SHOMGOM</option>
+                                    <option value="285">YAMALTU/DEBA</option>
+                                    <option value="286">ABOH-NBAISE</option>
+                                    <option value="287">AHIAZU MBAISE</option>
+                                    <option value="288">EHIME MBANO</option>
+                                    <option value="289">EZINIHITE-MBAISE</option>
+                                    <option value="290">IDEATO NORTH</option>
+                                    <option value="291">IDEATO SOUTH</option>
+                                    <option value="292">IHITTE UBOMA</option>
+                                    <option value="293">IKEDURU</option>
+                                    <option value="294">ISIALA MBANO</option>
+                                    <option value="295">ISU</option>
+                                    <option value="296">MBAITOLI</option>
+                                    <option value="297">NGOR-OKPUALA</option>
+                                    <option value="298">NJABA</option>
+                                    <option value="299">NWANGELE</option>
+                                    <option value="300">NKWERRE</option>
+                                    <option value="301">OBOWO</option>
+                                    <option value="302">OGUTA</option>
+                                    <option value="303">OHAJI/EGBEMA</option>
+                                    <option value="304">OKIGWE</option>
+                                    <option value="305">ONUIMO</option>
+                                    <option value="306">ORLU</option>
+                                    <option value="307">ORSU</option>
+                                    <option value="308">ORU EAST</option>
+                                    <option value="309">ORU WEST</option>
+                                    <option value="310">OWERRI</option>
+                                    <option value="311">OWERRI NORTH</option>
+                                    <option value="312">OWERRI WEST</option>
+                                    <option value="313">AUYO</option>
+                                    <option value="314">BABURA</option>
+                                    <option value="315">BIRNIN KUDU</option>
+                                    <option value="316">BIRNIWA</option>
+                                    <option value="317">GAGARAWA</option>
+                                    <option value="318">BUJI</option>
+                                    <option value="319">DUTSE</option>
+                                    <option value="320">GARKI</option>
+                                    <option value="321">GUMEL</option>
+                                    <option value="322">GURI</option>
+                                    <option value="323">GWARAM</option>
+                                    <option value="324">GWIWA</option>
+                                    <option value="325">HADEJIA</option>
+                                    <option value="326">JAHUN</option>
+                                    <option value="327">KAFIN HAUSA</option>
+                                    <option value="328">KAUGAMA</option>
+                                    <option value="329">KAZAURE</option>
+                                    <option value="330">KIRI KASAMMA</option>
+                                    <option value="331">KIYAWA</option>
+                                    <option value="332">MAIGATARI</option>
+                                    <option value="333">MALAM MADORI</option>
+                                    <option value="334">MIGA</option>
+                                    <option value="335">RINGIM</option>
+                                    <option value="336">RONI</option>
+                                    <option value="337">SULE TAKARKAR</option>
+                                    <option value="338">TAURA</option>
+                                    <option value="339">YANKWASHI</option>
+                                    <option value="340">BIRNIN GWARI</option>
+                                    <option value="341">CHIKUN</option>
+                                    <option value="342">GIWA</option>
+                                    <option value="343">KAJURU</option>
+                                    <option value="344">IGABI</option>
+                                    <option value="345">IKARA</option>
+                                    <option value="346">JABA</option>
+                                    <option value="347">JEMA'A</option>
+                                    <option value="348">KACHIA</option>
+                                    <option value="349">KADUNA NORTH</option>
+                                    <option value="350">KADUNA SOUTH</option>
+                                    <option value="351">KAGARKO</option>
+                                    <option value="352">KAURU</option>
+                                    <option value="354">KUBAU</option>
+                                    <option value="355">KUDAN</option>
+                                    <option value="356">LERE</option>
+                                    <option value="357">MAKARFI</option>
+                                    <option value="358">SABON GARI</option>
+                                    <option value="359">SANGA</option>
+                                    <option value="360">SOBA</option>
+                                    <option value="361">ZANGON KATAF</option>
+                                    <option value="362">ZARIA</option>
+                                    <option value="363">AJINGI</option>
+                                    <option value="364">ALBASU</option>
+                                    <option value="365">BAGWAI</option>
+                                    <option value="366">BEBEJI</option>
+                                    <option value="367">BICHI</option>
+                                    <option value="368">BUNKURE</option>
+                                    <option value="369">DALA</option>
+                                    <option value="370">DAMBATTA</option>
+                                    <option value="371">DAWAKIN KUDU</option>
+                                    <option value="372">DAWAKIN TOFA</option>
+                                    <option value="373">DOGUWA</option>
+                                    <option value="374">FAGGE</option>
+                                    <option value="375">GABASAWA</option>
+                                    <option value="376">GARKO</option>
+                                    <option value="377">GARUN MALLAM</option>
+                                    <option value="378">GAYA</option>
+                                    <option value="379">GEZAWA</option>
+                                    <option value="380">GWALE</option>
+                                    <option value="381">GWARZO</option>
+                                    <option value="382">KABO</option>
+                                    <option value="383">KANO MUNICIPAL</option>
+                                    <option value="384">KARAYE</option>
+                                    <option value="385">KIBIYA</option>
+                                    <option value="386">KIRU</option>
+                                    <option value="387">KUMBOTSO</option>
+                                    <option value="388">KUNCHI</option>
+                                    <option value="389">KURA</option>
+                                    <option value="390">MADOBI</option>
+                                    <option value="391">MAKODA</option>
+                                    <option value="392">MINJIBIR</option>
+                                    <option value="393">NASARAWA</option>
+                                    <option value="394">RANO</option>
+                                    <option value="395">RIMIN GADO</option>
+                                    <option value="396">ROGO</option>
+                                    <option value="397">SHANONO</option>
+                                    <option value="398">SUMAILA</option>
+                                    <option value="399">TAKAI</option>
+                                    <option value="400">TARAUNI</option>
+                                    <option value="401">TOFA</option>
+                                    <option value="402">TSANYAWA</option>
+                                    <option value="403">TUDUN WADA</option>
+                                    <option value="404">UNGOGO</option>
+                                    <option value="405">WARAWA</option>
+                                    <option value="406">WUDIL</option>
+                                    <option value="407">BAKORI</option>
+                                    <option value="408">BATAGARAWA</option>
+                                    <option value="409">BATSARI</option>
+                                    <option value="410">BAURE</option>
+                                    <option value="411">BINDAWA</option>
+                                    <option value="412">CHARANCHI</option>
+                                    <option value="413">DAN-MUSA</option>
+                                    <option value="414">DANDUME</option>
+                                    <option value="415">DANJA</option>
+                                    <option value="416">DAURA</option>
+                                    <option value="417">DUTSI</option>
+                                    <option value="418">DUTSIN MA</option>
+                                    <option value="419">FASKARI</option>
+                                    <option value="420">FUNTUA</option>
+                                    <option value="421">INGAWA</option>
+                                    <option value="422">JIBIA</option>
+                                    <option value="423">KAFUR</option>
+                                    <option value="424">KAITA</option>
+                                    <option value="425">KANKARA</option>
+                                    <option value="426">KANKIA</option>
+                                    <option value="427">KATSINA</option>
+                                    <option value="428">KURFI</option>
+                                    <option value="429">KUSADA</option>
+                                    <option value="430">MAI'ADUWA</option>
+                                    <option value="431">MALUMFASHI</option>
+                                    <option value="432">MANI</option>
+                                    <option value="433">MASHI</option>
+                                    <option value="434">MATAZU</option>
+                                    <option value="435">MUSAWA</option>
+                                    <option value="436">RIMI</option>
+                                    <option value="437">SABUWA</option>
+                                    <option value="438">SAFANA</option>
+                                    <option value="439">SANAMU</option>
+                                    <option value="440">ZANGO</option>
+                                    <option value="441">ALIERO</option>
+                                    <option value="442">AREWA DANDI</option>
+                                    <option value="443">ARGUNGU</option>
+                                    <option value="444">AUGIE</option>
+                                    <option value="445">BAGUDO</option>
+                                    <option value="446">BIRNIN -KEBBI</option>
+                                    <option value="447">BUNZA</option>
+                                    <option value="448">DANDI</option>
+                                    <option value="449">WASAGU/DANKO</option>
+                                    <option value="450">PAKAL</option>
+                                    <option value="451">GWANDU</option>
+                                    <option value="452">JEGA</option>
+                                    <option value="453">KALGO</option>
+                                    <option value="454">KOKO/BESSE</option>
+                                    <option value="455">MAIYAMA</option>
+                                    <option value="456">NGASKI</option>
+                                    <option value="457">SAKABA</option>
+                                    <option value="458">SHANGA</option>
+                                    <option value="459">SURU</option>
+                                    <option value="460">YAURI</option>
+                                    <option value="461">ZURU</option>
+                                    <option value="462">ADAVI</option>
+                                    <option value="463">AJAOKUTA</option>
+                                    <option value="464">ANKPA</option>
+                                    <option value="465">BASSA</option>
+                                    <option value="466">DEKINA</option>
+                                    <option value="467">IBAJI</option>
+                                    <option value="468">IDAH</option>
+                                    <option value="469">IGALA MELA</option>
+                                    <option value="470">IJUMU</option>
+                                    <option value="471">KABBA/BUNU</option>
+                                    <option value="472">LOKOJA/KOGI</option>
+                                    <option value="473">KOTONKARFE/KOGI</option>
+                                    <option value="474">MOPA-MURO</option>
+                                    <option value="475">OFU</option>
+                                    <option value="476">OGORI/MAGONGO</option>
+                                    <option value="477">OKEHI</option>
+                                    <option value="478">OKENE</option>
+                                    <option value="479">OLAMABORO</option>
+                                    <option value="480">OMALA</option>
+                                    <option value="481">YAGBA EAST</option>
+                                    <option value="482">YAGBA WEST</option>
+                                    <option value="483">ASA</option>
+                                    <option value="484">BARUTEN</option>
+                                    <option value="485">EDU</option>
+                                    <option value="486">EKITI</option>
+                                    <option value="487">IFELODUN</option>
+                                    <option value="488">ILORIN EAST</option>
+                                    <option value="489">ILORIN SOUTH</option>
+                                    <option value="490">ILORIN WEST</option>
+                                    <option value="491">IREPODUN</option>
+                                    <option value="492">KAIAMA</option>
+                                    <option value="493">MORO</option>
+                                    <option value="494">OFFA</option>
+                                    <option value="495">OKE-ERO</option>
+                                    <option value="496">OSIN</option>
+                                    <option value="497">OYUN</option>
+                                    <option value="498">PATEGI</option>
+                                    <option value="499">AGEGE</option>
+                                    <option value="500">AJEROMI/IFELODUN</option>
+                                    <option value="501">ALIMOSHO</option>
+                                    <option value="502">AMUWO-ODOFIN</option>
+                                    <option value="503">APAPA</option>
+                                    <option value="504">BADAGRY</option>
+                                    <option value="505">EPE</option>
+                                    <option value="506">ETI-OSA</option>
+                                    <option value="507">IBEJU-LEKKI</option>
+                                    <option value="508">IFAKO/IJAYE</option>
+                                    <option value="509">IKEJA</option>
+                                    <option value="510">IKORODU</option>
+                                    <option value="511">KOSOFE</option>
+                                    <option value="512">LAGOS ISLAND</option>
+                                    <option value="513">LAGOS MAINLAND</option>
+                                    <option value="514">MUSHIN</option>
+                                    <option value="515">OJO</option>
+                                    <option value="516">OSHODI/ISOLO</option>
+                                    <option value="517">SOMOLU</option>
+                                    <option value="518">SURULERE</option>
+                                    <option value="519">AKWANGA</option>
+                                    <option value="520">AWE</option>
+                                    <option value="521">DOMA</option>
+                                    <option value="522">KARU</option>
+                                    <option value="523">KEANA</option>
+                                    <option value="524">KEFFI</option>
+                                    <option value="525">KOKONA</option>
+                                    <option value="526">LAFIA</option>
+                                    <option value="527">NASARAWA</option>
+                                    <option value="528">NASARAWA-EGGON</option>
+                                    <option value="529">OBI</option>
+                                    <option value="530">TOTO</option>
+                                    <option value="531">WAMBA</option>
+                                    <option value="532">AGAIE</option>
+                                    <option value="533">AGWARA</option>
+                                    <option value="534">BIDA</option>
+                                    <option value="535">BORGU</option>
+                                    <option value="536">BOSSO</option>
+                                    <option value="537">EDATI</option>
+                                    <option value="538">GBAKO</option>
+                                    <option value="539">GURARA</option>
+                                    <option value="540">KATCHA</option>
+                                    <option value="541">KONTAGORA</option>
+                                    <option value="542">LAPAI</option>
+                                    <option value="543">LAVUN</option>
+                                    <option value="544">MGAMA</option>
+                                    <option value="545">MARIGA</option>
+                                    <option value="546">MASHEGU</option>
+                                    <option value="547">CHANCHAGA</option>
+                                    <option value="548">MOKWA</option>
+                                    <option value="549">MUYA</option>
+                                    <option value="550">PAIKORO</option>
+                                    <option value="551">RAFI</option>
+                                    <option value="552">RIJAU</option>
+                                    <option value="553">SHIRORO</option>
+                                    <option value="554">SULEJA</option>
+                                    <option value="555">TAFA</option>
+                                    <option value="556">WUSHISHI</option>
+                                    <option value="557">OGUN WATERSIDE</option>
+                                    <option value="558">ADO ODO/OTA</option>
+                                    <option value="559">ABEOKUTA SOUTH</option>
+                                    <option value="560">ABEOKUTA NORTH</option>
+                                    <option value="561">ILUGUN ALARO</option>
+                                    <option value="562">EGBADO NORTH</option>
+                                    <option value="563">IFO</option>
+                                    <option value="564">IJEBU NORTH</option>
+                                    <option value="565">IJEBU-ODE</option>
+                                    <option value="566">IKENNE</option>
+                                    <option value="567">EGBADO SOUTH</option>
+                                    <option value="568">IMEKO AFON</option>
+                                    <option value="569">IPOKIA</option>
+                                    <option value="570">IDARAPO</option>
+                                    <option value="571">EWEKORO</option>
+                                    <option value="572">OBAFEMI-OWODE</option>
+                                    <option value="573">ODEDA</option>
+                                    <option value="574">ODOGBOLU</option>
+                                    <option value="575">IJEBU EAST</option>
+                                    <option value="576">SHAGAMU</option>
+                                    <option value="577">AKOKO NORTH EAST</option>
+                                    <option value="578">AKOKO NORTH WEST</option>
+                                    <option value="579">AKOKO SOUTH WEST</option>
+                                    <option value="580">AKOKO SOUTH EAST</option>
+                                    <option value="581">AKURE NORTH</option>
+                                    <option value="582">AKURE</option>
+                                    <option value="583">IDANRE</option>
+                                    <option value="584">IFEDORE</option>
+                                    <option value="585">OKITIPUPA</option>
+                                    <option value="586">ILAJE</option>
+                                    <option value="587">ESE ODO</option>
+                                    <option value="588">ILE-OLUJI/OKEIGBO</option>
+                                    <option value="589">IRELE</option>
+                                    <option value="590">ODIGBO</option>
+                                    <option value="591">ONDO</option>
+                                    <option value="592">ONDO EAST</option>
+                                    <option value="593">OSE</option>
+                                    <option value="594">OWO</option>
+                                    <option value="595">ATAKUMOSA EAST</option>
+                                    <option value="596">ATAKUMOSA WEST</option>
+                                    <option value="597">AYEDAADE</option>
+                                    <option value="598">AYEDIRE</option>
+                                    <option value="599">BOLAWADURO</option>
+                                    <option value="600">BORIPE</option>
+                                    <option value="601">EDE NORTH</option>
+                                    <option value="602">EDE</option>
+                                    <option value="603">EGBEDORE</option>
+                                    <option value="604">EJIGBO</option>
+                                    <option value="605">IFE CENTRAL</option>
+                                    <option value="606">IFE EAST</option>
+                                    <option value="607">IFE NORTH</option>
+                                    <option value="608">IFE SOUTH</option>
+                                    <option value="609">IFEDAYO</option>
+                                    <option value="610">IFELODUN</option>
+                                    <option value="611">ILA</option>
+                                    <option value="612">ILESA EAST</option>
+                                    <option value="613">ILESA WEST</option>
+                                    <option value="614">IREPODUN</option>
+                                    <option value="615">IREWOLE</option>
+                                    <option value="616">ISOKAN</option>
+                                    <option value="617">IWO</option>
+                                    <option value="618">OBOKUM</option>
+                                    <option value="619">ODO-OTIN</option>
+                                    <option value="620">OLA-OLUWA</option>
+                                    <option value="621">OLORUNDA</option>
+                                    <option value="622">ORIADE</option>
+                                    <option value="623">OROLU</option>
+                                    <option value="624">OSHOGBO</option>
+                                    <option value="625">AFIJIO</option>
+                                    <option value="626">AKINYELE</option>
+                                    <option value="627">ATIBA</option>
+                                    <option value="628">ATIGBO</option>
+                                    <option value="629">EGBEDA</option>
+                                    <option value="630">IBADAN NORTH EAST</option>
+                                    <option value="631">IBADAN NORTH</option>
+                                    <option value="632">IBADAN NORTH WEST</option>
+                                    <option value="633">IBADAN SOUTH WEST</option>
+                                    <option value="634">IBADAN SOUTH EAST</option>
+                                    <option value="635">IBARAPA</option>
+                                    <option value="636">IBARAPA</option>
+                                    <option value="637">IDDO</option>
+                                    <option value="638">IFEDAPO</option>
+                                    <option value="639">IFELOJU</option>
+                                    <option value="640">IREPO</option>
+                                    <option value="641">ISEYIN</option>
+                                    <option value="642">ITESIWAJU</option>
+                                    <option value="643">IWAJOWA</option>
+                                    <option value="644">IYAMAPO/OLORUNSOGO</option>
+                                    <option value="645">KAJOLA</option>
+                                    <option value="646">LAGELU</option>
+                                    <option value="647">OGBOMOSHO NORTH</option>
+                                    <option value="648">OGBOMOSHO SOUTH</option>
+                                    <option value="649">OGO OLUWA</option>
+                                    <option value="650">OLUYOLE</option>
+                                    <option value="651">ONA ARA</option>
+                                    <option value="652">ORELOPE</option>
+                                    <option value="653">ORIRE</option>
+                                    <option value="654">OYO</option>
+                                    <option value="655">OYO WEST</option>
+                                    <option value="656">SAKI EAST</option>
+                                    <option value="657">SURULERE</option>
+                                    <option value="658">BARAKIN LADI</option>
+                                    <option value="659">BASSA</option>
+                                    <option value="660">BOKKOS</option>
+                                    <option value="661">JOS EAST</option>
+                                    <option value="662">JOS NORTH</option>
+                                    <option value="663">JOS SOUTH</option>
+                                    <option value="664">KANAM</option>
+                                    <option value="665">KANKE</option>
+                                    <option value="666">LANGTANG NORTH</option>
+                                    <option value="667">LANGTANG SOUTH</option>
+                                    <option value="668">MANGU</option>
+                                    <option value="669">MIKANG</option>
+                                    <option value="670">PANKSHIN</option>
+                                    <option value="671">QUA'AN-PAN</option>
+                                    <option value="672">RIYOM</option>
+                                    <option value="673">SHENDAM</option>
+                                    <option value="674">WASE</option>
+                                    <option value="675">AHOADA EAST</option>
+                                    <option value="676">AHOADA WEST</option>
+                                    <option value="677">AKUKU-TORU</option>
+                                    <option value="678">ANDONI</option>
+                                    <option value="679">ASARI-TORU</option>
+                                    <option value="680">BONNY</option>
+                                    <option value="681">DEGEMA</option>
+                                    <option value="682">ELEME</option>
+                                    <option value="683">EMUOHA</option>
+                                    <option value="684">ETCHE</option>
+                                    <option value="685">GOKANA</option>
+                                    <option value="686">IKWERRE</option>
+                                    <option value="687">KHANA</option>
+                                    <option value="688">OBIO AKPOR</option>
+                                    <option value="689">ABUA/ODUAL</option>
+                                    <option value="690">OGBA/EGBEMA</option>
+                                    <option value="691">OGU/BOLO</option>
+                                    <option value="692">OKRIKA</option>
+                                    <option value="693">OMUMMA</option>
+                                    <option value="694">OPOBO/NKORO</option>
+                                    <option value="695">OYIGBO</option>
+                                    <option value="696">PORT HARCOURT</option>
+                                    <option value="697">TAI</option>
+                                    <option value="698">BINJI</option>
+                                    <option value="699">BODINGA</option>
+                                    <option value="700">DANGE SHUNI</option>
+                                    <option value="701">GADA</option>
+                                    <option value="702">GORONYO</option>
+                                    <option value="703">GUDU</option>
+                                    <option value="704">GWADABAWA</option>
+                                    <option value="705">ILLELA</option>
+                                    <option value="706">ISA</option>
+                                    <option value="707">KEBBE</option>
+                                    <option value="708">KWARE</option>
+                                    <option value="709">RABAH</option>
+                                    <option value="710">SABON-BIRNIN</option>
+                                    <option value="711">SHAGARI</option>
+                                    <option value="712">SILAME</option>
+                                    <option value="713">SOKOTO NORTH</option>
+                                    <option value="714">SOKOTO SOUTH</option>
+                                    <option value="715">TAMBAWAL</option>
+                                    <option value="716">TANGAZA</option>
+                                    <option value="717">TURETA</option>
+                                    <option value="718">WAMAKKO</option>
+                                    <option value="719">WURNO</option>
+                                    <option value="720">YABO</option>
+                                    <option value="721">ARDO</option>
+                                    <option value="722">BALI</option>
+                                    <option value="723">DONGA</option>
+                                    <option value="724">GASHAKA</option>
+                                    <option value="725">GASSOL</option>
+                                    <option value="726">IBI</option>
+                                    <option value="727">JALINGO</option>
+                                    <option value="728">KARIM-LAMIDO</option>
+                                    <option value="729">KURMI</option>
+                                    <option value="730">LAU</option>
+                                    <option value="731">SARDAUNA</option>
+                                    <option value="732">TAKUM</option>
+                                    <option value="733">USSA</option>
+                                    <option value="734">WUKARI</option>
+                                    <option value="735">YORRO</option>
+                                    <option value="736">ZING</option>
+                                    <option value="737">BADE</option>
+                                    <option value="738">BURSARI</option>
+                                    <option value="739">DAMATURU</option>
+                                    <option value="740">FIKA</option>
+                                    <option value="741">FUNE</option>
+                                    <option value="742">GEIDAM</option>
+                                    <option value="743">GUJBA</option>
+                                    <option value="744">GULANI</option>
+                                    <option value="745">JAKUSKO</option>
+                                    <option value="746">KARASUWA</option>
+                                    <option value="747">MACHINA</option>
+                                    <option value="748">NANGERE</option>
+                                    <option value="749">NGURU</option>
+                                    <option value="750">POTISKUM</option>
+                                    <option value="751">TARMUA</option>
+                                    <option value="752">YUNUSARI</option>
+                                    <option value="753">YUSUFARI</option>
+                                    <option value="754">ANKA</option>
+                                    <option value="755">BAKURA</option>
+                                    <option value="756">BUKKUYUM</option>
+                                    <option value="757">BUNGUDU</option>
+                                    <option value="758">GUMMI</option>
+                                    <option value="759">GUSAU</option>
+                                    <option value="760">KAURA-NAMODA</option>
+                                    <option value="761">BIRNIN MAGAJI</option>
+                                    <option value="762">MARADUN</option>
+                                    <option value="763">MARU</option>
+                                    <option value="764">SHINKAFI</option>
+                                    <option value="765">TALATA MAFARA</option>
+                                    <option value="766">TSAFE</option>
+                                    <option value="767">ZURMI</option>
+                                    <option value="768">ABAJI</option>
+                                    <option value="769">MUNICIPAL</option>
+                                    <option value="770">BWARI</option>
+                                    <option value="771">GWAGWALADA</option>
+                                    <option value="772">KUJE</option>
+                                    <option value="773">KWALI</option>
+                                    <option value="774">ANAUCHA</option>
+                                    <option value="775">RUBOCHI</option>
+                                    <option value="776">KARSHI</option>
+                                    <option value="777">YABA</option>
+                                    <option value="778">DIOBU</option>
+                                    <option value="779">GUDUMBALI</option>
+                                    <option value="782">KAURA</option>
+                                </select>
+
+                                <input type="text" name="cityName" id="cityId"
+                                    placeholder="City/Town" class="form-control form_field_border">
+                            </div>
+
+                           
+
+                            <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                            <textarea name="contact-message" id="textarea_message" placeholder="Write message" rows="4"
+                                class="form-control"></textarea>
+                        </div> -->
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <button id="btn_submit" type="submit"
+                                        title="Next to attach renewal documents">Save and next</button><a href="renewals_docs.html">&nbsp;&nbsp;&nbsp;Next...</a>
+                            </div>
+                            <div class="alert-msg" id="alert-msg"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="padding-100"></div>
+            <div class="padding-30"></div>
+
+            <!-- Map -->
+            <!-- <div class="container-fluid no-padding map-section">
+                <div id="map-canvas-contact" class="map-canvas" data-lat="-37.817214" data-lng="144.955925"
+                    data-string="16122 Collins Street West, Victoria 8007 Australia" data-zoom="12"></div>
+            </div> -->
+            <!-- Map /- -->
+
+        </main>
+
+
+        <!-- Footer Section -->
+        <footer class="footer-main container-fluid no-padding">
+            <!-- Container -->
+            <div class="container">
+                <div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <a href="#" title="Logo"><img src="images/Benue-State-Footer-Logo.png" alt="Logo" /></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="register.html" title="Registration">Registration</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="renewal.html" title="Renewals">Renewals</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="ownership.html" title="Ownership">Change of ownership</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="plates.html.html" title="Plates">Plate numbers</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                </div>
+            </div><!-- Container /- -->
+
+            <!-- Copyright -->
+            <div class="container-fluid no-padding copyright">
+                <p><i class="fa fa-copyright"></i> BSVRTS. ALL RIGHTS RESERVED</p>
+            </div><!-- Copyright /- -->
+        </footer><!-- Footer Section /- -->
+
+    </div>
+
+    <!-- JQuery v1.12.4 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- Library - Js -->
+    <script src="libraries/lib.js"></script>
+
+    <!-- Library - Google Map API -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script> -->
+
+    <!-- Library - Theme JS -->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

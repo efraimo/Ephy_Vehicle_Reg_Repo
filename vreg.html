@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class=""><!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Benue Vehicle Registration and Tracking System</title>
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/vrts_icon.jpg" />
+
+    <!-- For iPhone 4 Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+
+    <!-- For iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+
+    <!-- For iPhone: -->
+    <link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Library - Google Font Familys -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700"
+        rel="stylesheet">
+
+    <!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+
+    <!-- Custom - Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/shortcode.css">
+
+    <!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .form_field_border {
+            border-color: #666 !important;
+            color: #333 !important;
+        }
+    </style>
+
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+    <div class="main-container">
+        <!-- Loader -->
+        <div id="site-loader" class="load-complete">
+            <div class="loader">
+                <div class="loader-inner ball-clip-rotate">
+                    <div></div>
+                </div>
+            </div>
+        </div><!-- Loader /- -->
+
+        <!-- Header Section -->
+        <header id="header" class="header-section container-fluid no-padding">
+            <!-- Container -->
+            <div class="container">
+                <!-- Top Header -->
+                <div class="top-header container-fluid no-padding">
+                    <div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+                        <a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Click to</span><b>Chat</b></a>
+                        <a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Call
+                                at</span><b>1-800-23-456-7890</b></a>
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- Top Header /- -->
+                <!-- nav -->
+                <nav class="navbar navbar-default ow-navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar"
+                            data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand"><img src="images/logo1.jpg" alt="Logo" /></a>
+                    </div>
+                    <!-- Menu Icon -->
+					<div class="menu-icon">
+						<div >
+							<ul class="nav ">
+								<li><a href="login.html" title="Login / register">Login/Register</a></li>
+							</ul>
+								
+							<!-- <a href="#" id="search" title="Search"><img src="images/search-ic.png" alt="Search" /></a> -->
+						</div>
+					</div>
+					<!-- Menu Icon /- -->
+                    <div class="navbar-collapse collapse navbar-left" id="navbar">
+                        <ul class="nav navbar-nav">
+
+                            <!-- <li class="active dropdown">
+								<a href="index.html" title="Home" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="index.html" title="homepage 1">homepage 1</a></li>
+									<li><a href="index2.html" title="homepage 2">homepage 2</a></li>
+								</ul>
+							</li> -->
+
+
+                            <li><a href="index.html" title="About">Home</a></li>
+                            <li><a href="about.html" title="About">About</a></li>
+                            <li><a href="vreg.html" title="Vehicle Registration">Vehicle Registration</a></li>
+                            <li><a href="renewals.html" title="Renew vehicle documents">Renewals</a></li>
+                            <li><a href="change_ownership.html" title="Change vehicle ownership">Change Ownership</a></li>
+                            <!-- <li class="dropdown">
+								<a href="inventory.html" title="Inventory" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">inventory</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="inventory-single.html" title="Inventory Single">Inventory Single</a></li>
+								</ul>
+							</li> -->
+                            <!-- <li><a href="services.html" title="Services">Services</a></li>
+							<li class="dropdown">
+								<a href="blog.html" title="Blog" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="blog-post.html" title="Blog Single">Blog Single</a></li>
+								</ul>
+							</li> -->
+                            <!-- <li class="dropdown">
+								<a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" title="Pages">Pages</a>
+								<i class="ddl-switch fa fa-angle-down"></i>
+								<ul class="dropdown-menu">				
+									<li><a href="404.html" title="404">404</a></li>
+								</ul>
+							</li> -->
+                            <li><a href="contactus.html" title="Contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+
+
+                </nav><!-- nav /- -->
+                <!-- Search Box -->
+                <div class="search-box">
+                    <span><i class="icon_close"></i></span>
+                    <form><input type="text" class="form-control" placeholder="Enter a keyword and press enter..." />
+                    </form>
+                </div><!-- Search Box /- -->
+            </div><!-- Container /- -->
+        </header><!-- Header Section /- -->
+
+
+        <main>
+
+            <!-- Page Banner -->
+            <div class="container-fluid no-padding page-banner">
+                <div class="padding-90"></div>
+                <!-- Container -->
+                <div class="container">
+                    <h3>Vehicle Registration</h3>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Registration Details </li>
+                    </ol>
+                </div><!-- Container /- -->
+                <div class="padding-100"></div>
+            </div><!-- Page Banner /- -->
+
+            <div class="section-padding"></div>
+
+            <!-- Contact Section -->
+            <div class="container-fluid no-padding contact-section">
+                <!-- Container -->
+                <div class="container">
+                    <h3>Vehicle Registration Details</h3>
+                    <form class="row">
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                      
+                            <select id="vehicleCategoryId" name="vehicleCategoryName"
+                                class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value=""> -- Select Vehicle Category --</option>
+                                <option value="Private">Private</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Government">Government</option>
+                            </select>
+
+                            <select id="vehicleSubCategoryId" name="vehicleSubCategoryName"
+                            class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value=""> -- Select Vehicle Sub Category --</option>
+                                <option value="Motor Cycle">Motor Cycle</option>
+                                <option value="Motor Vehicle">Motor Vehicle</option>
+                                <option value="LGA">LGA</option>
+                                <option value="Military or Paramilitaries">Military/Paramilitaries</option>
+                                <option value="State MDAs">State MDAs</option>
+                                <option value="Federal Parastatals, Agencies or Departments">Federal
+                                    Parastatals/Agencies/Departments</option>
+                                <option value="LGA">Diplomatic and Foreign Mission</option>
+                            </select>
+
+                            <select id="vehicleMakeId" name="vehicleMakeName" class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value="">-- Select Vehicle Make --</option>
+                                <option value=" 100	"> 100 </option>
+                                <option value=" 1617	"> 1617 </option>
+                                <option value=" 190	"> 190 </option>
+                                <option value=" 420"> 420</option>
+                                <option value=" 5 SERIES"> 5 SERIES</option>
+                                <option value=" ACCENT "> ACCENT </option>
+                                <option value=" ACURA "> ACURA </option>
+                                <option value=" ACURA LEGEND	"> ACURA LEGEND </option>
+                                <option value=" ACURA TI 3.2"> ACURA TI 3.2</option>
+                                <option value=" AERONAUTIC HAICE BUS"> AERONAUTIC HAICE BUS</option>
+                                <option value=" ALLOY RIM LIFAN "> ALLOY RIM LIFAN </option>
+                                <option value=" ALTIMA"> ALTIMA</option>
+                                <option value=" AM GENERAL"> AM GENERAL</option>
+                                <option value=" APOLLO "> APOLLO </option>
+                                <option value=" ARMADA JEEP"> ARMADA JEEP</option>
+                                <option value=" ASCONA"> ASCONA</option>
+                                <option value=" ASCONAL OPEL	"> ASCONAL OPEL </option>
+                                <option value=" ASHOK LEYLAND 1618 "> ASHOK LEYLAND 1618 </option>
+                                <option value=" ASTON MARTIN	"> ASTON MARTIN </option>
+                                <option value=" ATUL 3WHEELER "> ATUL 3WHEELER </option>
+                                <option value=" AUDI	"> AUDI </option>
+                                <option value=" AUDI 200"> AUDI 200</option>
+                                <option value=" AUDI 400"> AUDI 400</option>
+                                <option value=" AUDI 80"> AUDI 80</option>
+                                <option value=" AUDI A6"> AUDI A6</option>
+                                <option value=" AUDI Q7"> AUDI Q7</option>
+                                <option value=" AULTIMA"> AULTIMA</option>
+                                <option value=" AUSTIN	"> AUSTIN </option>
+                                <option value=" AUSTIN HEALEY	"> AUSTIN HEALEY </option>
+                                <option value=" B M W 3 SERIES "> B M W 3 SERIES </option>
+                                <option value=" B M W 520"> B M W 520</option>
+                                <option value=" B M W 525I "> B M W 525I </option>
+                                <option value=" B M W 730"> B M W 730</option>
+                                <option value=" B M W 735 SERIES "> B M W 735 SERIES </option>
+                                <option value=" B M W HIACE BUS "> B M W HIACE BUS </option>
+                                <option value=" B M W JEEP"> B M W JEEP</option>
+                                <option value=" B M W530	"> B M W530 </option>
+                                <option value=" B MW 316"> B MW 316</option>
+                                <option value=" B. M. W  316 S/CAR"> B. M. W 316 S/CAR</option>
+                                <option value=" B.M.C.	"> B.M.C. </option>
+                                <option value=" B.M.W 318	"> B.M.W 318 </option>
+                                <option value=" B.M.W 7351"> B.M.W 7351</option>
+                                <option value=" B.M.W X 5"> B.M.W X 5</option>
+                                <option value=" BAIC "> BAIC </option>
+                                <option value=" BAJAJ"> BAJAJ</option>
+                                <option value=" BAJAJ BM100 "> BAJAJ BM100 </option>
+                                <option value=" BAOLONG "> BAOLONG </option>
+                                <option value=" BASCO"> BASCO</option>
+                                <option value=" BAW	"> BAW </option>
+                                <option value=" BAW HIACE "> BAW HIACE </option>
+                                <option value=" BC125-7"> BC125-7</option>
+                                <option value=" BEDFORD"> BEDFORD</option>
+                                <option value=" BEDFORD MIDI	"> BEDFORD MIDI </option>
+                                <option value=" BEDFORD RASCAL "> BEDFORD RASCAL </option>
+                                <option value=" BEDFORD TIPPER"> BEDFORD TIPPER</option>
+                                <option value=" BEDFORD TIPPER LORRY	"> BEDFORD TIPPER LORRY </option>
+                                <option value=" BEDFORD/TIM/LORRY "> BEDFORD/TIM/LORRY </option>
+                                <option value=" BEETTLE"> BEETTLE</option>
+                                <option value=" BENTLEY"> BENTLEY</option>
+                                <option value=" BENZ ML"> BENZ ML</option>
+                                <option value=" BENZ200	"> BENZ200 </option>
+                                <option value=" BLUE BIRD REGULAR "> BLUE BIRD REGULAR </option>
+                                <option value=" BLUE/BIRD"> BLUE/BIRD</option>
+                                <option value=" BMW	"> BMW </option>
+                                <option value=" BMW 225"> BMW 225</option>
+                                <option value=" BMW 3 SERIES"> BMW 3 SERIES</option>
+                                <option value=" BMW 320"> BMW 320</option>
+                                <option value=" BMW 325 "> BMW 325 </option>
+                                <option value=" BMW 328	"> BMW 328 </option>
+                                <option value=" BMW 5 SERIES"> BMW 5 SERIES</option>
+                                <option value=" BMW 5251"> BMW 5251</option>
+                                <option value=" BMW 7 SERIES	"> BMW 7 SERIES </option>
+                                <option value=" BMW 7304	"> BMW 7304 </option>
+                                <option value=" BMW 740 IL "> BMW 740 IL </option>
+                                <option value=" BMW BUS "> BMW BUS </option>
+                                <option value=" BMW SERIES 7"> BMW SERIES 7</option>
+                                <option value=" BMW320"> BMW320</option>
+                                <option value=" BORD SEIRA"> BORD SEIRA</option>
+                                <option value=" BOXER"> BOXER</option>
+                                <option value=" BOXER B M	"> BOXER B M </option>
+                                <option value=" BOXERS BAJAJ "> BOXERS BAJAJ </option>
+                                <option value=" BRILLIANCE"> BRILLIANCE</option>
+                                <option value=" BRILLIANCE SPLENDOR"> BRILLIANCE SPLENDOR</option>
+                                <option value=" BUGATTI"> BUGATTI</option>
+                                <option value=" BUICK"> BUICK</option>
+                                <option value=" BYD"> BYD</option>
+                                <option value=" BYD F3 GLX-I	"> BYD F3 GLX-I </option>
+                                <option value=" CABSTER "> CABSTER </option>
+                                <option value=" CADILLAC"> CADILLAC</option>
+                                <option value=" CANTER PICK UP "> CANTER PICK UP </option>
+                                <option value=" CARGO SUPER	"> CARGO SUPER </option>
+                                <option value=" CARINA E"> CARINA E</option>
+                                <option value=" CARTER CY 90"> CARTER CY 90</option>
+                                <option value=" CERATO "> CERATO </option>
+                                <option value=" CG 100 CARTER"> CG 100 CARTER</option>
+                                <option value=" CGL  125"> CGL 125</option>
+                                <option value=" CHANA"> CHANA</option>
+                                <option value=" CHANA LORRY "> CHANA LORRY </option>
+                                <option value=" CHANG AN	"> CHANG AN </option>
+                                <option value=" CHANGHE"> CHANGHE</option>
+                                <option value=" CHANLIN "> CHANLIN </option>
+                                <option value=" CHENGLONG BRAND DUMP	"> CHENGLONG BRAND DUMP </option>
+                                <option value=" CHERROLET AREOLT	"> CHERROLET AREOLT </option>
+                                <option value=" CHERRY TIGGO"> CHERRY TIGGO</option>
+                                <option value=" CHERY"> CHERY</option>
+                                <option value=" CHEV PRISM "> CHEV PRISM </option>
+                                <option value=" CHEVROLET"> CHEVROLET</option>
+                                <option value=" CHEVROLET ASTRO BUS "> CHEVROLET ASTRO BUS </option>
+                                <option value=" CHEVROLET BLAZER	"> CHEVROLET BLAZER </option>
+                                <option value=" CHEVROLET CAVALIER	"> CHEVROLET CAVALIER </option>
+                                <option value=" CHEVROLET OPTRA 5"> CHEVROLET OPTRA 5</option>
+                                <option value=" CHEVY 20	"> CHEVY 20 </option>
+                                <option value=" CHEVY P UP"> CHEVY P UP</option>
+                                <option value=" CHEVY VAN"> CHEVY VAN</option>
+                                <option value=" CHEVYVENTURE CHEVROLET "> CHEVYVENTURE CHEVROLET </option>
+                                <option value=" CHINDADI P/UP "> CHINDADI P/UP </option>
+                                <option value=" CHROOKE JEEP "> CHROOKE JEEP </option>
+                                <option value=" CHRYSLER	"> CHRYSLER </option>
+                                <option value=" CHRYSLER CONCORD "> CHRYSLER CONCORD </option>
+                                <option value=" CHRYSLER NEON	"> CHRYSLER NEON </option>
+                                <option value=" CIELO DAEWOO"> CIELO DAEWOO</option>
+                                <option value=" CITROEN"> CITROEN</option>
+                                <option value=" CITY "> CITY </option>
+                                <option value=" CIVIC 1.7 VTISE "> CIVIC 1.7 VTISE </option>
+                                <option value=" CNHTC	"> CNHTC </option>
+                                <option value=" COMBO	 "> COMBO </option>
+                                <option value=" CORDOBA "> CORDOBA </option>
+                                <option value=" COROLLA	"> COROLLA </option>
+                                <option value=" COURIER "> COURIER </option>
+                                <option value=" CRUISER CARGO "> CRUISER CARGO </option>
+                                <option value=" CRV"> CRV</option>
+                                <option value=" DADDY  P/UP "> DADDY P/UP </option>
+                                <option value=" DADI"> DADI</option>
+                                <option value=" DADI P/UP "> DADI P/UP </option>
+                                <option value=" DAEWOO"> DAEWOO</option>
+                                <option value=" DAEWOO  ESPERO	"> DAEWOO ESPERO </option>
+                                <option value=" DAEWOO  NUBIRA	"> DAEWOO NUBIRA </option>
+                                <option value=" DAEWOO LEGANZA	"> DAEWOO LEGANZA </option>
+                                <option value=" DAEWOO LUBLIN VAN "> DAEWOO LUBLIN VAN </option>
+                                <option value=" DAEWOO RACER"> DAEWOO RACER</option>
+                                <option value=" DAF"> DAF</option>
+                                <option value=" DAF 1100"> DAF 1100</option>
+                                <option value=" DAF 1300 P/UP "> DAF 1300 P/UP </option>
+                                <option value=" DAF 1700 TRUCK"> DAF 1700 TRUCK</option>
+                                <option value=" DAF 2100"> DAF 2100</option>
+                                <option value=" DAF 45 TRUCK "> DAF 45 TRUCK </option>
+                                <option value=" DAF 95 TRUCK "> DAF 95 TRUCK </option>
+                                <option value=" DAF LORRY "> DAF LORRY </option>
+                                <option value=" DAF TIPPER LORRY	"> DAF TIPPER LORRY </option>
+                                <option value=" DAF TRACTOR	"> DAF TRACTOR </option>
+                                <option value=" DAF XF 430"> DAF XF 430</option>
+                                <option value=" DAIHATSU	"> DAIHATSU </option>
+                                <option value=" DAIHATSU APPLAUSE	"> DAIHATSU APPLAUSE </option>
+                                <option value=" DAIMLER BENZ 308	"> DAIMLER BENZ 308 </option>
+                                <option value=" DAIMLER CHRYSLER JEEP "> DAIMLER CHRYSLER JEEP </option>
+                                <option value=" DANCIA LOGAN	"> DANCIA LOGAN </option>
+                                <option value=" DASHATSU APPLAUSE"> DASHATSU APPLAUSE</option>
+                                <option value=" DASTUN "> DASTUN </option>
+                                <option value=" DATSUN"> DATSUN</option>
+                                <option value=" DATSUN 140J "> DATSUN 140J </option>
+                                <option value=" DATSUN 1500"> DATSUN 1500</option>
+                                <option value=" DATSUN 160J	"> DATSUN 160J </option>
+                                <option value=" DATSUN 180"> DATSUN 180</option>
+                                <option value=" DATSUN B/BIRD"> DATSUN B/BIRD</option>
+                                <option value=" DATSUN C20	"> DATSUN C20 </option>
+                                <option value=" DATSUN CABSTAR "> DATSUN CABSTAR </option>
+                                <option value=" DATSUN CHERRY	"> DATSUN CHERRY </option>
+                                <option value=" DATSUN LAUREL	"> DATSUN LAUREL </option>
+                                <option value=" DATSUN PANEL VANN "> DATSUN PANEL VANN </option>
+                                <option value=" DATSUN STANZA	"> DATSUN STANZA </option>
+                                <option value=" DATSUN SUNNY	"> DATSUN SUNNY </option>
+                                <option value=" DEER"> DEER</option>
+                                <option value=" DIAHAZU  JEEP "> DIAHAZU JEEP </option>
+                                <option value=" DODGE CARAVAN"> DODGE CARAVAN</option>
+                                <option value=" DODGE DURANGO"> DODGE DURANGO</option>
+                                <option value=" DODGE GRAND "> DODGE GRAND </option>
+                                <option value=" DODGE GRAND CARAVAN"> DODGE GRAND CARAVAN</option>
+                                <option value=" DODGE RAM	"> DODGE RAM </option>
+                                <option value=" DOGER CARVAN"> DOGER CARVAN</option>
+                                <option value=" DONGFENG"> DONGFENG</option>
+                                <option value=" DOUBLE CABIN"> DOUBLE CABIN</option>
+                                <option value=" DUCAR 110-2	"> DUCAR 110-2 </option>
+                                <option value=" DURANGO JEEP "> DURANGO JEEP </option>
+                                <option value=" EAGLE TALON"> EAGLE TALON</option>
+                                <option value=" EBRO	"> EBRO </option>
+                                <option value=" ELANTRA "> ELANTRA </option>
+                                <option value=" EURO TECH"> EURO TECH</option>
+                                <option value=" EVERUS"> EVERUS</option>
+                                <option value=" FABIA SEDAN	"> FABIA SEDAN </option>
+                                <option value=" FANAGON VOLK"> FANAGON VOLK</option>
+                                <option value=" FAW"> FAW</option>
+                                <option value=" FERRARI"> FERRARI</option>
+                                <option value=" FIAT"> FIAT</option>
+                                <option value=" FIAT CUTROEN "> FIAT CUTROEN </option>
+                                <option value=" FIAT PUNTO"> FIAT PUNTO</option>
+                                <option value=" FIAT TRUCK	"> FIAT TRUCK </option>
+                                <option value=" FOED IVECO "> FOED IVECO </option>
+                                <option value=" FOED SIERRA"> FOED SIERRA</option>
+                                <option value=" FORD"> FORD</option>
+                                <option value=" FORD AEROSTAR BUS	"> FORD AEROSTAR BUS </option>
+                                <option value=" FORD AEROSTAR S/BUS"> FORD AEROSTAR S/BUS</option>
+                                <option value=" FORD AEROSTAR XLT	"> FORD AEROSTAR XLT </option>
+                                <option value=" FORD BUS "> FORD BUS </option>
+                                <option value=" FORD ECONO	"> FORD ECONO </option>
+                                <option value=" FORD ECONOLINE"> FORD ECONOLINE</option>
+                                <option value=" FORD ECONOMOVAN BUS	"> FORD ECONOMOVAN BUS </option>
+                                <option value=" FORD ECONOVAN "> FORD ECONOVAN </option>
+                                <option value=" FORD ESCORT"> FORD ESCORT</option>
+                                <option value=" FORD ESCORT WAGON"> FORD ESCORT WAGON</option>
+                                <option value=" FORD ESCOSPORT"> FORD ESCOSPORT</option>
+                                <option value=" FORD EXPLORER"> FORD EXPLORER</option>
+                                <option value=" FORD F150 JEEP"> FORD F150 JEEP</option>
+                                <option value=" FORD FIESTA	"> FORD FIESTA </option>
+                                <option value=" FORD FOCUS "> FORD FOCUS </option>
+                                <option value=" FORD GOSWORTH"> FORD GOSWORTH</option>
+                                <option value=" FORD ISUZU "> FORD ISUZU </option>
+                                <option value=" FORD MONDEO"> FORD MONDEO</option>
+                                <option value=" FORD MUSTANG"> FORD MUSTANG</option>
+                                <option value=" FORD P/UP"> FORD P/UP</option>
+                                <option value=" FORD PROBE"> FORD PROBE</option>
+                                <option value=" FORD RANGER"> FORD RANGER</option>
+                                <option value=" FORD SCORPIO"> FORD SCORPIO</option>
+                                <option value=" FORD SILHOUTTE "> FORD SILHOUTTE </option>
+                                <option value=" FORD TAURUS"> FORD TAURUS</option>
+                                <option value=" FORD TIPPER"> FORD TIPPER</option>
+                                <option value=" FORD TRANSIT"> FORD TRANSIT</option>
+                                <option value=" FORD TRUCK"> FORD TRUCK</option>
+                                <option value=" FORD WINDSTAR "> FORD WINDSTAR </option>
+                                <option value=" FORD WINSTAR"> FORD WINSTAR</option>
+                                <option value=" FORTA	"> FORTA </option>
+                                <option value=" FRAGEND"> FRAGEND</option>
+                                <option value=" FRAJEND"> FRAJEND</option>
+                                <option value=" FUKANG "> FUKANG </option>
+                                <option value=" FUQI"> FUQI</option>
+                                <option value=" FUXING"> FUXING</option>
+                                <option value=" G M C SAVANA "> G M C SAVANA </option>
+                                <option value=" G M C VAN"> G M C VAN</option>
+                                <option value=" GAC "> GAC </option>
+                                <option value=" GAIG"> GAIG</option>
+                                <option value=" GALLARD "> GALLARD </option>
+                                <option value=" GEELY "> GEELY </option>
+                                <option value=" GEWLY MK"> GEWLY MK</option>
+                                <option value=" GK 125"> GK 125</option>
+                                <option value=" GMC"> GMC</option>
+                                <option value=" GMC TRUCK"> GMC TRUCK</option>
+                                <option value=" GO WELL"> GO WELL</option>
+                                <option value=" GO WELL M/C"> GO WELL M/C</option>
+                                <option value=" GOLDEN	"> GOLDEN </option>
+                                <option value=" GOLDEN DRAGON BUS "> GOLDEN DRAGON BUS </option>
+                                <option value=" GOLF 3	"> GOLF 3 </option>
+                                <option value=" GOLF 3 STATION WAGON	"> GOLF 3 STATION WAGON </option>
+                                <option value=" GOLF VOLKSWAGEN "> GOLF VOLKSWAGEN </option>
+                                <option value=" GONOW"> GONOW</option>
+                                <option value=" GRAND CHEROKEE "> GRAND CHEROKEE </option>
+                                <option value=" GREAT WALL DEER	"> GREAT WALL DEER </option>
+                                <option value=" GREEN FIELD MOTOR"> GREEN FIELD MOTOR</option>
+                                <option value=" GUIZHOU / YUNQUE"> GUIZHOU / YUNQUE</option>
+                                <option value=" HAFEI"> HAFEI</option>
+                                <option value=" HAICE JUMBER BUS "> HAICE JUMBER BUS </option>
+                                <option value=" HAIER THERMOCOOL	"> HAIER THERMOCOOL </option>
+                                <option value=" HAIMA	 "> HAIMA </option>
+                                <option value=" HAISE	"> HAISE </option>
+                                <option value=" HAOJUE"> HAOJUE</option>
+                                <option value=" HAWTAI (HUATAI)"> HAWTAI (HUATAI)</option>
+                                <option value=" HIAB PICK-UP"> HIAB PICK-UP</option>
+                                <option value=" HILUX "> HILUX </option>
+                                <option value=" HOLSTENE "> HOLSTENE </option>
+                                <option value=" HONDA	"> HONDA </option>
+                                <option value=" HONDA ACCENT"> HONDA ACCENT</option>
+                                <option value=" HONDA ACCORD"> HONDA ACCORD</option>
+                                <option value=" HONDA ALLA "> HONDA ALLA </option>
+                                <option value=" HONDA BULLET"> HONDA BULLET</option>
+                                <option value=" HONDA CIVIC"> HONDA CIVIC</option>
+                                <option value=" HONDA CR-V	"> HONDA CR-V </option>
+                                <option value=" HONDA CRV"> HONDA CRV</option>
+                                <option value=" HONDA DEL SOL "> HONDA DEL SOL </option>
+                                <option value=" HONDA ELEMENT "> HONDA ELEMENT </option>
+                                <option value=" HONDA I. V   TECH "> HONDA I. V TECH </option>
+                                <option value=" HONDA INTERGRA "> HONDA INTERGRA </option>
+                                <option value=" HONDA LEGEND"> HONDA LEGEND</option>
+                                <option value=" HONDA ODYSSEY"> HONDA ODYSSEY</option>
+                                <option value=" HONDA ODYSSEY SPACE BUS"> HONDA ODYSSEY SPACE BUS</option>
+                                <option value=" HONDA PILOT"> HONDA PILOT</option>
+                                <option value=" HONDA QUITENT "> HONDA QUITENT </option>
+                                <option value=" HOUSTON TRUCK	"> HOUSTON TRUCK </option>
+                                <option value=" HOVAN BUS	"> HOVAN BUS </option>
+                                <option value=" HOVER "> HOVER </option>
+                                <option value=" HOWO "> HOWO </option>
+                                <option value=" HUALI"> HUALI</option>
+                                <option value=" HUAYANG "> HUAYANG </option>
+                                <option value=" HUMMER	"> HUMMER </option>
+                                <option value=" HUMMER H2"> HUMMER H2</option>
+                                <option value=" HUNTER "> HUNTER </option>
+                                <option value=" HUNTER CG 125"> HUNTER CG 125</option>
+                                <option value=" HWANGHAI	"> HWANGHAI </option>
+                                <option value=" HYAUNDA "> HYAUNDA </option>
+                                <option value=" HYDUNAI JEEP	"> HYDUNAI JEEP </option>
+                                <option value=" HYUNDA"> HYUNDA</option>
+                                <option value=" HYUNDAI"> HYUNDAI</option>
+                                <option value=" HYUNDAI ACCENT"> HYUNDAI ACCENT</option>
+                                <option value=" HYUNDAI ACCENT GLS "> HYUNDAI ACCENT GLS </option>
+                                <option value=" HYUNDAI BUS "> HYUNDAI BUS </option>
+                                <option value=" HYUNDAI H100"> HYUNDAI H100</option>
+                                <option value=" HYUNDAI LANTRA"> HYUNDAI LANTRA</option>
+                                <option value=" HYUNDAI PICK UP"> HYUNDAI PICK UP</option>
+                                <option value=" HYUNDAI SANTAMO"> HYUNDAI SANTAMO</option>
+                                <option value=" HYUNDAI SONATA"> HYUNDAI SONATA</option>
+                                <option value=" HYUNDAI TUCSON	"> HYUNDAI TUCSON </option>
+                                <option value=" INFINITI	"> INFINITI </option>
+                                <option value=" INFINITY"> INFINITY</option>
+                                <option value=" INFINITY CAR"> INFINITY CAR</option>
+                                <option value=" INFINITY G20 "> INFINITY G20 </option>
+                                <option value=" INFINITY JEEP	"> INFINITY JEEP </option>
+                                <option value=" INFINITY Q45"> INFINITY Q45</option>
+                                <option value=" INFINITY QX56	"> INFINITY QX56 </option>
+                                <option value=" INTER TIPPER "> INTER TIPPER </option>
+                                <option value=" INTER TRUCK	"> INTER TRUCK </option>
+                                <option value=" ISUZU ASCENDER	"> ISUZU ASCENDER </option>
+                                <option value=" ISUZU BULLION VAN "> ISUZU BULLION VAN </option>
+                                <option value=" ISUZU CAMPOCREW "> ISUZU CAMPOCREW </option>
+                                <option value=" ISUZU P/UO "> ISUZU P/UO </option>
+                                <option value=" ISUZU P/UP "> ISUZU P/UP </option>
+                                <option value=" ISUZU TROOPER"> ISUZU TROOPER</option>
+                                <option value=" IVECO"> IVECO</option>
+                                <option value=" IVECO EUROSTAR TRACTOR HEAD"> IVECO EUROSTAR TRACTOR HEAD</option>
+                                <option value=" IVECO FORD "> IVECO FORD </option>
+                                <option value=" IVECO LORRY	"> IVECO LORRY </option>
+                                <option value=" IVECO SEDDON ATKINSON TANKER"> IVECO SEDDON ATKINSON TANKER</option>
+                                <option value=" IVECO TIPPER	"> IVECO TIPPER </option>
+                                <option value=" IVECO TRUCK "> IVECO TRUCK </option>
+                                <option value=" IVEKO TRUCK "> IVEKO TRUCK </option>
+                                <option value=" IZUZU TROPPER"> IZUZU TROPPER</option>
+                                <option value=" JAC "> JAC </option>
+                                <option value=" JAC BUS	"> JAC BUS </option>
+                                <option value=" JAC LORRY "> JAC LORRY </option>
+                                <option value=" JAC PICK UP "> JAC PICK UP </option>
+                                <option value=" JAC TRUCK "> JAC TRUCK </option>
+                                <option value=" JAGUAR"> JAGUAR</option>
+                                <option value=" JEEP	"> JEEP </option>
+                                <option value=" JEEP PARTFINDER"> JEEP PARTFINDER</option>
+                                <option value=" JETTA"> JETTA</option>
+                                <option value=" JETTA PASSAT "> JETTA PASSAT </option>
+                                <option value=" JETTA SALOON "> JETTA SALOON </option>
+                                <option value=" JETTE SALOON "> JETTE SALOON </option>
+                                <option value=" JIN BEI BUS "> JIN BEI BUS </option>
+                                <option value=" JINCHENG"> JINCHENG</option>
+                                <option value=" JMC"> JMC</option>
+                                <option value=" JONWAY "> JONWAY </option>
+                                <option value=" KAMA P/UP "> KAMA P/UP </option>
+                                <option value=" KIA	"> KIA </option>
+                                <option value=" KIA BUS"> KIA BUS</option>
+                                <option value=" KIA CAPITAL "> KIA CAPITAL </option>
+                                <option value=" KIA CAR "> KIA CAR </option>
+                                <option value=" KIA KIA"> KIA KIA</option>
+                                <option value=" KIA LORRY K2700SC "> KIA LORRY K2700SC </option>
+                                <option value=" KIA OPIRUS "> KIA OPIRUS </option>
+                                <option value=" KIA PICK UP "> KIA PICK UP </option>
+                                <option value=" KIA PREGIO"> KIA PREGIO</option>
+                                <option value=" KIA RIO"> KIA RIO</option>
+                                <option value=" KIA SEDONA	"> KIA SEDONA </option>
+                                <option value=" KIA SPORT "> KIA SPORT </option>
+                                <option value=" KIA SPORTAGE	"> KIA SPORTAGE </option>
+                                <option value=" KINETIC WING"> KINETIC WING</option>
+                                <option value=" KING LONG"> KING LONG</option>
+                                <option value=" KINGCHENG"> KINGCHENG</option>
+                                <option value=" KOREA "> KOREA </option>
+                                <option value=" KYMCO"> KYMCO</option>
+                                <option value=" KYMCO MC	"> KYMCO MC </option>
+                                <option value=" LACROSSE	"> LACROSSE </option>
+                                <option value=" LAMBORGHINI	"> LAMBORGHINI </option>
+                                <option value=" LANCIA	"> LANCIA </option>
+                                <option value=" LANCIA KAPPA"> LANCIA KAPPA</option>
+                                <option value=" LAND ROVER"> LAND ROVER</option>
+                                <option value=" LAND ROVER FREELANDER"> LAND ROVER FREELANDER</option>
+                                <option value=" LANDWIND"> LANDWIND</option>
+                                <option value=" LANTRA HYUNDAI "> LANTRA HYUNDAI </option>
+                                <option value=" LARADO JEEP	"> LARADO JEEP </option>
+                                <option value=" LAREDO JEEP "> LAREDO JEEP </option>
+                                <option value=" LAUREL "> LAUREL </option>
+                                <option value=" LDB MINI BUS "> LDB MINI BUS </option>
+                                <option value=" LDV 400"> LDV 400</option>
+                                <option value=" LDV CONVOLT "> LDV CONVOLT </option>
+                                <option value=" LDV CONVOY "> LDV CONVOY </option>
+                                <option value=" LDV PILOT VAN "> LDV PILOT VAN </option>
+                                <option value=" LEXUS"> LEXUS</option>
+                                <option value=" LEXUS LX 400"> LEXUS LX 400</option>
+                                <option value=" LEXUS RX 330"> LEXUS RX 330</option>
+                                <option value=" LEYLAND"> LEYLAND</option>
+                                <option value=" LEYLAND DAF 85"> LEYLAND DAF 85</option>
+                                <option value=" LEYLAND SCRAB LORRY"> LEYLAND SCRAB LORRY</option>
+                                <option value=" LEYLAND TIPPER "> LEYLAND TIPPER </option>
+                                <option value=" LIBERTY	"> LIBERTY </option>
+                                <option value=" LIBERTY SPORT JEEP"> LIBERTY SPORT JEEP</option>
+                                <option value=" LICON ALOY "> LICON ALOY </option>
+                                <option value=" LICON NAVIGATOR JEEP "> LICON NAVIGATOR JEEP </option>
+                                <option value=" LIFT BACK "> LIFT BACK </option>
+                                <option value=" LIFTAN  "> LIFTAN </option>
+                                <option value=" LIFTAN MOTORCYCLE"> LIFTAN MOTORCYCLE</option>
+                                <option value=" LINCOLN	"> LINCOLN </option>
+                                <option value=" LINCON NAVIGATOR JEEP	"> LINCON NAVIGATOR JEEP </option>
+                                <option value=" LITE ACE BUS "> LITE ACE BUS </option>
+                                <option value=" LOTUS"> LOTUS</option>
+                                <option value=" LOWBED"> LOWBED</option>
+                                <option value=" M /BENZ 280"> M /BENZ 280</option>
+                                <option value=" M BENZ TANKER "> M BENZ TANKER </option>
+                                <option value=" M BENZ TRACTOR "> M BENZ TRACTOR </option>
+                                <option value=" M/B"> M/B</option>
+                                <option value=" M/B ML 430	"> M/B ML 430 </option>
+                                <option value=" M/BENS 430	"> M/BENS 430 </option>
+                                <option value=" M/BENS 500"> M/BENS 500</option>
+                                <option value=" M/BENZ  200T "> M/BENZ 200T </option>
+                                <option value=" M/BENZ  508 BUS "> M/BENZ 508 BUS </option>
+                                <option value=" M/BENZ 100 D BUS "> M/BENZ 100 D BUS </option>
+                                <option value=" M/BENZ 1114 "> M/BENZ 1114 </option>
+                                <option value=" M/BENZ 1314"> M/BENZ 1314</option>
+                                <option value=" M/BENZ 1414"> M/BENZ 1414</option>
+                                <option value=" M/BENZ 180"> M/BENZ 180</option>
+                                <option value=" M/BENZ 190"> M/BENZ 190</option>
+                                <option value=" M/BENZ 190 V/BOOT "> M/BENZ 190 V/BOOT </option>
+                                <option value=" M/BENZ 200 TE "> M/BENZ 200 TE </option>
+                                <option value=" M/BENZ 200 V.BOOT	"> M/BENZ 200 V.BOOT </option>
+                                <option value=" M/BENZ 208 BUS"> M/BENZ 208 BUS</option>
+                                <option value=" M/BENZ 208D "> M/BENZ 208D </option>
+                                <option value=" M/BENZ 230"> M/BENZ 230</option>
+                                <option value=" M/BENZ 240"> M/BENZ 240</option>
+                                <option value=" M/BENZ 250"> M/BENZ 250</option>
+                                <option value=" M/BENZ 260"> M/BENZ 260</option>
+                                <option value=" M/BENZ 260E	"> M/BENZ 260E </option>
+                                <option value=" M/BENZ 300"> M/BENZ 300</option>
+                                <option value=" M/BENZ 300 V/BOOTS "> M/BENZ 300 V/BOOTS </option>
+                                <option value=" M/BENZ 300T "> M/BENZ 300T </option>
+                                <option value=" M/BENZ 408	"> M/BENZ 408 </option>
+                                <option value=" M/BENZ 422"> M/BENZ 422</option>
+                                <option value=" M/BENZ 601"> M/BENZ 601</option>
+                                <option value=" M/BENZ 809"> M/BENZ 809</option>
+                                <option value=" M/BENZ 914"> M/BENZ 914</option>
+                                <option value=" M/BENZ C 180"> M/BENZ C 180</option>
+                                <option value=" M/BENZ C CLASS"> M/BENZ C CLASS</option>
+                                <option value=" M/BENZ C200	"> M/BENZ C200 </option>
+                                <option value=" M/BENZ C220"> M/BENZ C220</option>
+                                <option value=" M/BENZ C230 "> M/BENZ C230 </option>
+                                <option value=" M/BENZ C320	"> M/BENZ C320 </option>
+                                <option value=" M/BENZ CONCORD "> M/BENZ CONCORD </option>
+                                <option value=" M/BENZ DIESEL"> M/BENZ DIESEL</option>
+                                <option value=" M/BENZ E-CLASS "> M/BENZ E-CLASS </option>
+                                <option value=" M/BENZ E220	"> M/BENZ E220 </option>
+                                <option value=" M/BENZ E290"> M/BENZ E290</option>
+                                <option value=" M/BENZ E320"> M/BENZ E320</option>
+                                <option value=" M/BENZ E420"> M/BENZ E420</option>
+                                <option value=" M/BENZ G500"> M/BENZ G500</option>
+                                <option value=" M/BENZ JEEP "> M/BENZ JEEP </option>
+                                <option value=" M/BENZ LORRY"> M/BENZ LORRY</option>
+                                <option value=" M/BENZ MI 350/R"> M/BENZ MI 350/R</option>
+                                <option value=" M/BENZ ML 350"> M/BENZ ML 350</option>
+                                <option value=" M/BENZ ML 430"> M/BENZ ML 430</option>
+                                <option value=" M/BENZ ML300"> M/BENZ ML300</option>
+                                <option value=" M/BENZ ML320"> M/BENZ ML320</option>
+                                <option value=" M/BENZ R350"> M/BENZ R350</option>
+                                <option value=" M/BENZ S/WAGON"> M/BENZ S/WAGON</option>
+                                <option value=" M/BENZ TANKER TRUCK "> M/BENZ TANKER TRUCK </option>
+                                <option value=" M/BENZ TRUCK "> M/BENZ TRUCK </option>
+                                <option value=" M/BENZ V BOOT	"> M/BENZ V BOOT </option>
+                                <option value=" M/BENZ V-BOOT"> M/BENZ V-BOOT</option>
+                                <option value=" M/BENZ VAKA 208	"> M/BENZ VAKA 208 </option>
+                                <option value=" M/BENZ VAN"> M/BENZ VAN</option>
+                                <option value=" M/BENZ VITO"> M/BENZ VITO</option>
+                                <option value=" M/BENZ-PICKUP	"> M/BENZ-PICKUP </option>
+                                <option value=" M/BENZE ML 430"> M/BENZE ML 430</option>
+                                <option value=" MACK"> MACK</option>
+                                <option value=" MACK CH612"> MACK CH612</option>
+                                <option value=" MAGIRUS"> MAGIRUS</option>
+                                <option value=" MAGRUIS DEUTZ "> MAGRUIS DEUTZ </option>
+                                <option value=" MAGRUS	"> MAGRUS </option>
+                                <option value=" MAN	"> MAN </option>
+                                <option value=" MAN DIESEL"> MAN DIESEL</option>
+                                <option value=" MAN DIESEL TIPPER"> MAN DIESEL TIPPER</option>
+                                <option value=" MAN TRUCK TIPPER	"> MAN TRUCK TIPPER </option>
+                                <option value=" MARCU VILL		"> MARCU VILL </option>
+                                <option value=" MARWA M/C "> MARWA M/C </option>
+                                <option value=" MASERATI	"> MASERATI </option>
+                                <option value=" MASSEY FERGUSON U.K	"> MASSEY FERGUSON U.K </option>
+                                <option value=" MATES 90	"> MATES 90 </option>
+                                <option value=" MAXIMA"> MAXIMA</option>
+                                <option value=" MAYBACH"> MAYBACH</option>
+                                <option value=" MAZ 626	"> MAZ 626 </option>
+                                <option value=" MAZDA"> MAZDA</option>
+                                <option value=" MAZDA  PICK-UP"> MAZDA PICK-UP</option>
+                                <option value=" MAZDA 2000"> MAZDA 2000</option>
+                                <option value=" MAZDA 2200 BUS "> MAZDA 2200 BUS </option>
+                                <option value=" MAZDA 2600"> MAZDA 2600</option>
+                                <option value=" MAZDA 322 "> MAZDA 322 </option>
+                                <option value=" MAZDA 323"> MAZDA 323</option>
+                                <option value=" MAZDA 323 F	"> MAZDA 323 F </option>
+                                <option value=" MAZDA 6	"> MAZDA 6 </option>
+                                <option value=" MAZDA 626"> MAZDA 626</option>
+                                <option value=" MAZDA B 3000 "> MAZDA B 3000 </option>
+                                <option value=" MAZDA B2200	"> MAZDA B2200 </option>
+                                <option value=" MAZDA E20 BUS "> MAZDA E20 BUS </option>
+                                <option value=" MAZDA E2200"> MAZDA E2200</option>
+                                <option value=" MAZDA HILUX"> MAZDA HILUX</option>
+                                <option value=" MAZDA MX-6	"> MAZDA MX-6 </option>
+                                <option value=" MAZDA VAN "> MAZDA VAN </option>
+                                <option value=" MAZDA XEDOS"> MAZDA XEDOS</option>
+                                <option value=" MAZDA XEDOS-6"> MAZDA XEDOS-6</option>
+                                <option value=" MERCEDES BENZ E 420	"> MERCEDES BENZ E 420 </option>
+                                <option value=" MERCEDES- BENZ E 200"> MERCEDES- BENZ E 200</option>
+                                <option value=" MERCEDES-BENZ"> MERCEDES-BENZ</option>
+                                <option value=" MERCEDES-BENZ 190 "> MERCEDES-BENZ 190 </option>
+                                <option value=" MERCEDES-BENZ 200	"> MERCEDES-BENZ 200 </option>
+                                <option value=" MERCEDES-BENZ 200E"> MERCEDES-BENZ 200E</option>
+                                <option value=" MERCEDES-BENZ 230"> MERCEDES-BENZ 230</option>
+                                <option value=" MERCEDES-BENZ 230 E"> MERCEDES-BENZ 230 E</option>
+                                <option value=" MERCEDES-BENZ 280SE "> MERCEDES-BENZ 280SE </option>
+                                <option value=" MERCEDES-BENZ 300 V/BOOT	"> MERCEDES-BENZ 300 V/BOOT </option>
+                                <option value=" MERCEDES-BENZ 310	"> MERCEDES-BENZ 310 </option>
+                                <option value=" MERCEDES-BENZ 520"> MERCEDES-BENZ 520</option>
+                                <option value=" MERCEDES-BENZ C 200"> MERCEDES-BENZ C 200</option>
+                                <option value=" MERCEDES-BENZ ML500"> MERCEDES-BENZ ML500</option>
+                                <option value=" MERCEDES-BENZ S 550"> MERCEDES-BENZ S 550</option>
+                                <option value=" MERCEDES-BENZ V/BOOT"> MERCEDES-BENZ V/BOOT</option>
+                                <option value=" MERCEDES-BENZ V/BOOT 200"> MERCEDES-BENZ V/BOOT 200</option>
+                                <option value=" MERCURY"> MERCURY</option>
+                                <option value=" MERCURY TRANSPORTER "> MERCURY TRANSPORTER </option>
+                                <option value=" MERCURY VILLAGE"> MERCURY VILLAGE</option>
+                                <option value=" MI 350 JEEP"> MI 350 JEEP</option>
+                                <option value=" MINI COOPER "> MINI COOPER </option>
+                                <option value=" MISTUBA"> MISTUBA</option>
+                                <option value=" MIT BUS"> MIT BUS</option>
+                                <option value=" MIT CABSTER "> MIT CABSTER </option>
+                                <option value=" MIT CANTER"> MIT CANTER</option>
+                                <option value=" MIT ECLIPSE"> MIT ECLIPSE</option>
+                                <option value=" MIT GALLANT	"> MIT GALLANT </option>
+                                <option value=" MIT L200 PICK UP	"> MIT L200 PICK UP </option>
+                                <option value=" MIT OUTLANDER "> MIT OUTLANDER </option>
+                                <option value=" MIT PAJERO"> MIT PAJERO</option>
+                                <option value=" MIT SPACE BUS	"> MIT SPACE BUS </option>
+                                <option value=" MIT VALLEY "> MIT VALLEY </option>
+                                <option value=" MIT VALLEY BUS	"> MIT VALLEY BUS </option>
+                                <option value=" MITS CANTER "> MITS CANTER </option>
+                                <option value=" MITSUBISHI	"> MITSUBISHI </option>
+                                <option value=" MITSUBISHI CANTER P/UP"> MITSUBISHI CANTER P/UP</option>
+                                <option value=" MITSUBISHI CARISMA "> MITSUBISHI CARISMA </option>
+                                <option value=" MITSUBISHI COLT"> MITSUBISHI COLT</option>
+                                <option value=" MITSUBISHI CORROLA	"> MITSUBISHI CORROLA </option>
+                                <option value=" MITSUBISHI GALLANT"> MITSUBISHI GALLANT</option>
+                                <option value=" MITSUBISHI L200"> MITSUBISHI L200</option>
+                                <option value=" MITSUBISHI LANCER"> MITSUBISHI LANCER</option>
+                                <option value=" MITSUBISHI MONTERO"> MITSUBISHI MONTERO</option>
+                                <option value=" MITSUBISHI PAJERO"> MITSUBISHI PAJERO</option>
+                                <option value=" MITSUBISHI SAPPORO"> MITSUBISHI SAPPORO</option>
+                                <option value=" MITSUBISHI SIGMA	"> MITSUBISHI SIGMA </option>
+                                <option value=" MITSUBISHI SPACE BUS "> MITSUBISHI SPACE BUS </option>
+                                <option value=" MITSUBISHI SPACE GEAR "> MITSUBISHI SPACE GEAR </option>
+                                <option value=" MITSUBISHI SPACE RUNNER "> MITSUBISHI SPACE RUNNER </option>
+                                <option value=" MITSUBISHI SPACEWAGON"> MITSUBISHI SPACEWAGON</option>
+                                <option value=" MITSUBISHI STANCER	"> MITSUBISHI STANCER </option>
+                                <option value=" MITSUBUSHI MIRAGE	"> MITSUBUSHI MIRAGE </option>
+                                <option value=" MITSUBUSHI PICK UP "> MITSUBUSHI PICK UP </option>
+                                <option value=" Montero J "> Montero J </option>
+                                <option value=" MONTERO JEEP"> MONTERO JEEP</option>
+                                <option value=" MORRIS"> MORRIS</option>
+                                <option value=" MORRIS TIMBER	"> MORRIS TIMBER </option>
+                                <option value=" MORTOR CYCLE "> MORTOR CYCLE </option>
+                                <option value=" N/C123"> N/C123</option>
+                                <option value=" NAC "> NAC </option>
+                                <option value=" NANFANG"> NANFANG</option>
+                                <option value=" NAPEP BAGGIO "> NAPEP BAGGIO </option>
+                                <option value=" NIPPO SUPRA	"> NIPPO SUPRA </option>
+                                <option value=" NIPPON SUPRA "> NIPPON SUPRA </option>
+                                <option value=" NISSAN"> NISSAN</option>
+                                <option value=" NISSAN"> NISSAN</option>
+                                <option value=" NISSAN 200LX "> NISSAN 200LX </option>
+                                <option value=" NISSAN 200SX "> NISSAN 200SX </option>
+                                <option value=" NISSAN ALTIMA"> NISSAN ALTIMA</option>
+                                <option value=" NISSAN ARMADA JEEP"> NISSAN ARMADA JEEP</option>
+                                <option value=" NISSAN ATLAS"> NISSAN ATLAS</option>
+                                <option value=" NISSAN BUS"> NISSAN BUS</option>
+                                <option value=" NISSAN CABSTAR PLUP"> NISSAN CABSTAR PLUP</option>
+                                <option value=" NISSAN CAPSTAR "> NISSAN CAPSTAR </option>
+                                <option value=" NISSAN CARAVAN BUS"> NISSAN CARAVAN BUS</option>
+                                <option value=" NISSAN CELICA "> NISSAN CELICA </option>
+                                <option value=" NISSAN CHERRY"> NISSAN CHERRY</option>
+                                <option value=" NISSAN CIVILIAN "> NISSAN CIVILIAN </option>
+                                <option value=" NISSAN COASTER "> NISSAN COASTER </option>
+                                <option value=" NISSAN COMB "> NISSAN COMB </option>
+                                <option value=" NISSAN DATSUN	"> NISSAN DATSUN </option>
+                                <option value=" NISSAN E20"> NISSAN E20</option>
+                                <option value=" NISSAN E20 BUS "> NISSAN E20 BUS </option>
+                                <option value=" NISSAN FRONTER P/UP "> NISSAN FRONTER P/UP </option>
+                                <option value=" NISSAN FRONTIER "> NISSAN FRONTIER </option>
+                                <option value=" NISSAN GLORIA "> NISSAN GLORIA </option>
+                                <option value=" NISSAN JEEP"> NISSAN JEEP</option>
+                                <option value=" NISSAN LAUREL	"> NISSAN LAUREL </option>
+                                <option value=" NISSAN MAIMA QX	"> NISSAN MAIMA QX </option>
+                                <option value=" NISSAN MAXIINIA"> NISSAN MAXIINIA</option>
+                                <option value=" NISSAN MAXIMA	"> NISSAN MAXIMA </option>
+
+                                <option value=" NISSAN MAXIMA QX	"> NISSAN MAXIMA QX </option>
+                                <option value=" NISSAN MICRA	"> NISSAN MICRA </option>
+                                <option value=" NISSAN MINI BUS	"> NISSAN MINI BUS </option>
+                                <option value=" NISSAN PATROL"> NISSAN PATROL</option>
+                                <option value=" NISSAN PICK UP"> NISSAN PICK UP</option>
+                                <option value=" NISSAN PRAIRE"> NISSAN PRAIRE</option>
+                                <option value=" NISSAN PRAIRIE		"> NISSAN PRAIRIE </option>
+                                <option value=" NISSAN PREMIRE	"> NISSAN PREMIRE </option>
+                                <option value=" NISSAN PREVIA "> NISSAN PREVIA </option>
+                                <option value=" NISSAN PRIMERA"> NISSAN PRIMERA</option>
+                                <option value=" NISSAN SANTRA "> NISSAN SANTRA </option>
+                                <option value=" NISSAN SANZA	"> NISSAN SANZA </option>
+                                <option value=" NISSAN SENROL "> NISSAN SENROL </option>
+                                <option value=" NISSAN SENTRA"> NISSAN SENTRA</option>
+                                <option value=" NISSAN SERRENA"> NISSAN SERRENA</option>
+                                <option value=" NISSAN SPACE BUS "> NISSAN SPACE BUS </option>
+                                <option value=" NISSAN STANZA"> NISSAN STANZA</option>
+                                <option value=" NISSAN STARLET "> NISSAN STARLET </option>
+                                <option value=" NISSAN SUNNY"> NISSAN SUNNY</option>
+                                <option value=" NISSAN SUNNY L/BACK "> NISSAN SUNNY L/BACK </option>
+                                <option value=" NISSAN SUNNY LIFT BLACK "> NISSAN SUNNY LIFT BLACK </option>
+                                <option value=" NISSAN SUPER	"> NISSAN SUPER </option>
+                                <option value=" NISSAN TEANA"> NISSAN TEANA</option>
+                                <option value=" NISSAN TERANO"> NISSAN TERANO</option>
+                                <option value=" NISSAN TIIDA "> NISSAN TIIDA </option>
+                                <option value=" NISSAN TILDA"> NISSAN TILDA</option>
+                                <option value=" NISSAN TRADE"> NISSAN TRADE</option>
+                                <option value=" NISSAN UD"> NISSAN UD</option>
+                                <option value=" NISSAN VANETTE"> NISSAN VANETTE</option>
+                                <option value=" NISSAN VILLAGER "> NISSAN VILLAGER </option>
+                                <option value=" NIVA 1600	"> NIVA 1600 </option>
+                                <option value=" NX 125 "> NX 125 </option>
+                                <option value=" NX 125 M/C "> NX 125 M/C </option>
+                                <option value=" OCTONIA	"> OCTONIA </option>
+                                <option value=" OGT EXPERT VAN "> OGT EXPERT VAN </option>
+                                <option value=" OJAKI	"> OJAKI </option>
+                                <option value=" OKA		"> OKA </option>
+                                <option value=" OPEL ASCONA"> OPEL ASCONA</option>
+                                <option value=" OPEL ASTRA	"> OPEL ASTRA </option>
+                                <option value=" OPEL CALIBRA "> OPEL CALIBRA </option>
+                                <option value=" OPEL CORSA "> OPEL CORSA </option>
+                                <option value=" OPEL CORSA 10"> OPEL CORSA 10</option>
+                                <option value=" OPEL FRONTERA"> OPEL FRONTERA</option>
+                                <option value=" OPEL FROTERA	"> OPEL FROTERA </option>
+                                <option value=" OPEL KADET	"> OPEL KADET </option>
+                                <option value=" OPEL KADET  S/W"> OPEL KADET S/W</option>
+                                <option value=" OPEL OMEGA"> OPEL OMEGA</option>
+                                <option value=" OPEL SANITRA"> OPEL SANITRA</option>
+                                <option value=" OPEL SENATOR"> OPEL SENATOR</option>
+                                <option value=" OPEL SERATO	"> OPEL SERATO </option>
+                                <option value=" OPEL VANXHEULT	"> OPEL VANXHEULT </option>
+                                <option value=" OPEL VECTRA	"> OPEL VECTRA </option>
+                                <option value=" OPEL/ASTRA "> OPEL/ASTRA </option>
+                                <option value=" ORRON FORD"> ORRON FORD</option>
+                                <option value=" OSAKI "> OSAKI </option>
+                                <option value=" PACKARD	"> PACKARD </option>
+                                <option value=" PACKARD BUS "> PACKARD BUS </option>
+                                <option value=" PAJERO MITS"> PAJERO MITS</option>
+                                <option value=" PASSAT"> PASSAT</option>
+                                <option value=" PASSAT VENTO "> PASSAT VENTO </option>
+                                <option value=" PATHFINDER "> PATHFINDER </option>
+                                <option value=" PE P/UP "> PE P/UP </option>
+                                <option value=" PEUGEOT	"> PEUGEOT </option>
+                                <option value=" PEUGEOT 104	"> PEUGEOT 104 </option>
+                                <option value=" PEUGEOT 306	"> PEUGEOT 306 </option>
+                                <option value=" PEUGEOT 307"> PEUGEOT 307</option>
+                                <option value=" PEUGEOT 309 "> PEUGEOT 309 </option>
+                                <option value=" PEUGEOT 404	"> PEUGEOT 404 </option>
+                                <option value=" PEUGEOT 405"> PEUGEOT 405</option>
+                                <option value=" PEUGEOT 406"> PEUGEOT 406</option>
+                                <option value=" PEUGEOT 504	"> PEUGEOT 504 </option>
+                                <option value=" PEUGEOT 504 SR "> PEUGEOT 504 SR </option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 505"> PEUGEOT 505</option>
+                                <option value=" PEUGEOT 605"> PEUGEOT 605</option>
+                                <option value=" PEUGEOT EXPERT	"> PEUGEOT EXPERT </option>
+                                <option value=" PEUGEOT P/UP"> PEUGEOT P/UP</option>
+                                <option value=" PEUGEOT TALBOT"> PEUGEOT TALBOT</option>
+                                <option value=" PGT EXPERS VAN "> PGT EXPERS VAN </option>
+                                <option value=" PIAGIO APE 3 WHEELER"> PIAGIO APE 3 WHEELER</option>
+                                <option value=" PICANTO	"> PICANTO </option>
+                                <option value=" PICANTO KIA "> PICANTO KIA </option>
+                                <option value=" PICANTO S/CAR "> PICANTO S/CAR </option>
+                                <option value=" PICK UP	"> PICK UP </option>
+                                <option value=" PICK- UP VAN"> PICK- UP VAN</option>
+                                <option value=" PLYMOUNT	"> PLYMOUNT </option>
+                                <option value=" PLYMOUTH	"> PLYMOUTH </option>
+                                <option value=" POLARSUN AUTOMOBILE"> POLARSUN AUTOMOBILE</option>
+                                <option value=" POLARSUN BUS "> POLARSUN BUS </option>
+                                <option value=" PONTIAC"> PONTIAC</option>
+                                <option value=" PORCHE "> PORCHE </option>
+                                <option value=" PRADO JEEP"> PRADO JEEP</option>
+                                <option value=" PREMIER"> PREMIER</option>
+                                <option value=" PREVIA	"> PREVIA </option>
+                                <option value=" PRIMERAL S/C	"> PRIMERAL S/C </option>
+                                <option value=" PRIZM GEO"> PRIZM GEO</option>
+                                <option value=" PRIZM LSI "> PRIZM LSI </option>
+                                <option value=" PRIZM S/CAR"> PRIZM S/CAR</option>
+                                <option value=" QINGQI"> QINGQI</option>
+                                <option value=" QINGQI INNOSON"> QINGQI INNOSON</option>
+                                <option value=" QINOI	"> QINOI </option>
+                                <option value=" QOROS"> QOROS</option>
+                                <option value=" QUEST "> QUEST </option>
+                                <option value=" QUINGUN "> QUINGUN </option>
+                                <option value=" RANGE ROVER JEEP"> RANGE ROVER JEEP</option>
+                                <option value=" RANGE ROVER VOGUE"> RANGE ROVER VOGUE</option>
+                                <option value=" RAV 4"> RAV 4</option>
+                                <option value=" REGAL "> REGAL </option>
+                                <option value=" REGALS "> REGALS </option>
+                                <option value=" RENAULT	"> RENAULT </option>
+                                <option value=" RENAULT BUS	"> RENAULT BUS </option>
+                                <option value=" RENAULT ESPACE "> RENAULT ESPACE </option>
+                                <option value=" RENAULT LAGUNA LIFT BACK"> RENAULT LAGUNA LIFT BACK</option>
+                                <option value=" RENAULT MEGANE "> RENAULT MEGANE </option>
+                                <option value=" RENAULT RAPID"> RENAULT RAPID</option>
+                                <option value=" RENAULT TRAFIC	"> RENAULT TRAFIC </option>
+                                <option value=" RENAULT TWINGO"> RENAULT TWINGO</option>
+                                <option value=" RENULT CLIO "> RENULT CLIO </option>
+                                <option value=" RIO	"> RIO </option>
+                                <option value=" RIO SC "> RIO SC </option>
+                                <option value=" ROCK MOTORCYCLE "> ROCK MOTORCYCLE </option>
+                                <option value=" ROEWE"> ROEWE</option>
+                                <option value=" ROLLS-ROYCE	"> ROLLS-ROYCE </option>
+                                <option value=" ROVER"> ROVER</option>
+                                <option value=" ROVER 216 GST"> ROVER 216 GST</option>
+                                <option value=" ROVER 618"> ROVER 618</option>
+                                <option value=" ROVER 827 S "> ROVER 827 S </option>
+                                <option value=" ROVER 827SI "> ROVER 827SI </option>
+                                <option value=" SAAB"> SAAB</option>
+                                <option value=" SAIC MOTOR	"> SAIC MOTOR </option>
+                                <option value=" SALEEN	"> SALEEN </option>
+                                <option value=" SALOON WAGON "> SALOON WAGON </option>
+                                <option value=" SAMYANG"> SAMYANG</option>
+                                <option value=" SANGYONG REXTON JEEP"> SANGYONG REXTON JEEP</option>
+                                <option value=" SANTANA"> SANTANA</option>
+                                <option value=" SATURN"> SATURN</option>
+                                <option value=" SAVANA BUS	"> SAVANA BUS </option>
+                                <option value=" SCANIA LORRY	"> SCANIA LORRY </option>
+                                <option value=" SCANIA TRUCK"> SCANIA TRUCK</option>
+                                <option value=" SCION	"> SCION </option>
+                                <option value=" SEAT -TOLEDO"> SEAT -TOLEDO</option>
+                                <option value=" SEAT CAR "> SEAT CAR </option>
+                                <option value=" SEDDON ATKINSON"> SEDDON ATKINSON</option>
+                                <option value=" SEPHIA II"> SEPHIA II</option>
+                                <option value=" SEPHIRE S/C	"> SEPHIRE S/C </option>
+                                <option value=" SERENA	1	"> SERENA 1 </option>
+                                <option value=" SHAANXI	"> SHAANXI </option>
+                                <option value=" SHARPER CARAVAN "> SHARPER CARAVAN </option>
+                                <option value=" SHUANGHUAN	"> SHUANGHUAN </option>
+                                <option value=" SICHUAN TENGZHONG"> SICHUAN TENGZHONG</option>
+                                <option value=" SIENNA BUS	"> SIENNA BUS </option>
+                                <option value=" SIGMA"> SIGMA</option>
+                                <option value=" SIMBA	"> SIMBA </option>
+                                <option value=" SIMBA TRICYCLE"> SIMBA TRICYCLE</option>
+                                <option value=" SINO"> SINO</option>
+                                <option value=" SINOKI SUPRA "> SINOKI SUPRA </option>
+                                <option value=" SKODA"> SKODA</option>
+                                <option value=" SKODA OCTAVIA "> SKODA OCTAVIA </option>
+                                <option value=" SMA "> SMA </option>
+                                <option value=" SNOKY  SIGMA"> SNOKY SIGMA</option>
+                                <option value=" SNUBA	"> SNUBA </option>
+                                <option value=" SORENTO"> SORENTO</option>
+                                <option value=" SOUEAST MOTORS / DONGNAN"> SOUEAST MOTORS / DONGNAN</option>
+                                <option value=" SSANG YOUNG REXTON"> SSANG YOUNG REXTON</option>
+                                <option value=" STALLION"> STALLION</option>
+                                <option value=" STERLING SUNNY"> STERLING SUNNY</option>
+                                <option value=" STERY	 "> STERY </option>
+                                <option value=" STEYER "> STEYER </option>
+                                <option value=" STEYR TRUCK	"> STEYR TRUCK </option>
+                                <option value=" STUDEBAKER	"> STUDEBAKER </option>
+                                <option value=" STYER TIPPER"> STYER TIPPER</option>
+                                <option value=" SUBARU	"> SUBARU </option>
+                                <option value=" SUBARU FORESTER "> SUBARU FORESTER </option>
+                                <option value=" SUBARU LEGACY	"> SUBARU LEGACY </option>
+                                <option value=" SUBARU PROTON"> SUBARU PROTON</option>
+                                <option value=" SUNNY		"> SUNNY </option>
+                                <option value=" SUPERBIKE"> SUPERBIKE</option>
+                                <option value=" SUPRA	"> SUPRA </option>
+                                <option value=" SUSAN"> SUSAN</option>
+                                <option value=" SUZI MIDI"> SUZI MIDI</option>
+                                <option value=" SUZIKI SWIFT"> SUZIKI SWIFT</option>
+                                <option value=" SUZUKI"> SUZUKI</option>
+                                <option value=" SUZUKI AH 14E "> SUZUKI AH 14E </option>
+                                <option value=" SUZUKI BALENO S/C "> SUZUKI BALENO S/C </option>
+                                <option value=" SUZUKI ESCUDO "> SUZUKI ESCUDO </option>
+                                <option value=" SUZUKI GRAND VITARA"> SUZUKI GRAND VITARA</option>
+                                <option value=" SUZUKI RODEO"> SUZUKI RODEO</option>
+                                <option value=" SUZUKI SIDE KICK"> SUZUKI SIDE KICK</option>
+                                <option value=" SUZUKI VICTARA JEEP "> SUZUKI VICTARA JEEP </option>
+                                <option value=" SUZUKI VITARA	"> SUZUKI VITARA </option>
+                                <option value=" T.V.S."> T.V.S.</option>
+                                <option value=" TACOMA "> TACOMA </option>
+                                <option value=" TATA BUS"> TATA BUS</option>
+                                <option value=" TATA P/UP"> TATA P/UP</option>
+                                <option value=" TATA SUMO JEEP "> TATA SUMO JEEP </option>
+                                <option value=" TATA TRUCK"> TATA TRUCK</option>
+                                <option value=" TATA VAN"> TATA VAN</option>
+                                <option value=" TEC 123 M/C "> TEC 123 M/C </option>
+                                <option value=" TEC MC	"> TEC MC </option>
+                                <option value=" TEC SPEED "> TEC SPEED </option>
+                                <option value=" TEC SPEED I "> TEC SPEED I </option>
+                                <option value=" TEE CYCLE"> TEE CYCLE</option>
+                                <option value=" TELECOLINE	"> TELECOLINE </option>
+                                <option value=" TERANO "> TERANO </option>
+                                <option value=" TERANO JEEP "> TERANO JEEP </option>
+                                <option value=" TERRACAN		"> TERRACAN </option>
+                                <option value=" THOMAS FLAT FACE "> THOMAS FLAT FACE </option>
+                                <option value=" THOMAS REGULAR "> THOMAS REGULAR </option>
+                                <option value=" TIANMA"> TIANMA</option>
+                                <option value=" TIMBER LORRY "> TIMBER LORRY </option>
+                                <option value=" TINK "> TINK </option>
+                                <option value=" TIPPER TRAILER "> TIPPER TRAILER </option>
+                                <option value=" TITAN AX100"> TITAN AX100</option>
+                                <option value=" TOHEDO "> TOHEDO </option>
+                                <option value=" TONGTIAN "> TONGTIAN </option>
+                                <option value=" TOTOTA "> TOTOTA </option>
+                                <option value=" TOYOTA	"> TOYOTA </option>
+                                <option value=" TOYOTA  LE "> TOYOTA LE </option>
+                                <option value=" TOYOTA 4 RUNNER	"> TOYOTA 4 RUNNER </option>
+                                <option value=" TOYOTA 4 RUNNER JEEP "> TOYOTA 4 RUNNER JEEP </option>
+                                <option value=" TOYOTA ARISTO"> TOYOTA ARISTO</option>
+                                <option value=" TOYOTA AVANZA "> TOYOTA AVANZA </option>
+                                <option value=" TOYOTA AVENSUS "> TOYOTA AVENSUS </option>
+                                <option value=" TOYOTA CAMRY"> TOYOTA CAMRY</option>
+                                <option value=" TOYOTA CAMRY LE "> TOYOTA CAMRY LE </option>
+                                <option value=" TOYOTA CAMRY S/C"> TOYOTA CAMRY S/C</option>
+                                <option value=" TOYOTA CANTER	"> TOYOTA CANTER </option>
+                                <option value=" TOYOTA CARINA 11 "> TOYOTA CARINA 11 </option>
+                                <option value=" TOYOTA CARINA 11 L/BACK "> TOYOTA CARINA 11 L/BACK </option>
+                                <option value=" TOYOTA CARINA II"> TOYOTA CARINA II</option>
+                                <option value=" TOYOTA CARINA S/CAR "> TOYOTA CARINA S/CAR </option>
+                                <option value=" TOYOTA CARMRY "> TOYOTA CARMRY </option>
+                                <option value=" TOYOTA CELICA"> TOYOTA CELICA</option>
+                                <option value=" TOYOTA COASTER"> TOYOTA COASTER</option>
+                                <option value=" TOYOTA CONDOR"> TOYOTA CONDOR</option>
+                                <option value=" TOYOTA COPERATION S/CAR "> TOYOTA COPERATION S/CAR </option>
+                                <option value=" TOYOTA COROLLA L/BACK "> TOYOTA COROLLA L/BACK </option>
+                                <option value=" TOYOTA CORROLA"> TOYOTA CORROLA</option>
+                                <option value=" TOYOTA CRESSIDA"> TOYOTA CRESSIDA</option>
+                                <option value=" TOYOTA D/CUBIU"> TOYOTA D/CUBIU</option>
+                                <option value=" TOYOTA DYME P/UP"> TOYOTA DYME P/UP</option>
+                                <option value=" TOYOTA DYNA 200 PICK UP"> TOYOTA DYNA 200 PICK UP</option>
+                                <option value=" TOYOTA DYNA P/UP"> TOYOTA DYNA P/UP</option>
+                                <option value=" TOYOTA HILUS	"> TOYOTA HILUS </option>
+                                <option value=" TOYOTA HILUS BUS"> TOYOTA HILUS BUS</option>
+                                <option value=" TOYOTA HILUX"> TOYOTA HILUX</option>
+                                <option value=" TOYOTA HILUX BUS	"> TOYOTA HILUX BUS </option>
+                                <option value=" TOYOTA LAND CRUISER"> TOYOTA LAND CRUISER</option>
+                                <option value=" TOYOTA LEXUS	"> TOYOTA LEXUS </option>
+                                <option value=" TOYOTA LEXUS LS 470"> TOYOTA LEXUS LS 470</option>
+                                <option value=" TOYOTA LIMITED JEEP"> TOYOTA LIMITED JEEP</option>
+                                <option value=" TOYOTA LIYEACE	"> TOYOTA LIYEACE </option>
+                                <option value=" TOYOTA MATRIX"> TOYOTA MATRIX</option>
+                                <option value=" TOYOTA MICRA	"> TOYOTA MICRA </option>
+                                <option value=" TOYOTA MINI BUS "> TOYOTA MINI BUS </option>
+                                <option value=" TOYOTA NISSAN "> TOYOTA NISSAN </option>
+                                <option value=" TOYOTA PANEL"> TOYOTA PANEL</option>
+                                <option value=" TOYOTA PANEL VAN "> TOYOTA PANEL VAN </option>
+                                <option value=" TOYOTA PICK UP"> TOYOTA PICK UP</option>
+                                <option value=" TOYOTA PRADO"> TOYOTA PRADO</option>
+                                <option value=" TOYOTA PREDO JEEP "> TOYOTA PREDO JEEP </option>
+                                <option value=" TOYOTA PREVIA	"> TOYOTA PREVIA </option>
+                                <option value=" TOYOTA SAFE "> TOYOTA SAFE </option>
+                                <option value=" TOYOTA SEQUOIA	"> TOYOTA SEQUOIA </option>
+                                <option value=" TOYOTA SEQVA"> TOYOTA SEQVA</option>
+                                <option value=" TOYOTA SERENA	"> TOYOTA SERENA </option>
+                                <option value=" TOYOTA SOLARA CAMRY "> TOYOTA SOLARA CAMRY </option>
+                                <option value=" TOYOTA STARLET"> TOYOTA STARLET</option>
+                                <option value=" TOYOTA T100"> TOYOTA T100</option>
+                                <option value=" TOYOTA T100 P/UP"> TOYOTA T100 P/UP</option>
+                                <option value=" TOYOTA TERCEL	"> TOYOTA TERCEL </option>
+                                <option value=" TOYOTA TOWN ACE"> TOYOTA TOWN ACE</option>
+                                <option value=" TOYOTA TOYOACE "> TOYOTA TOYOACE </option>
+                                <option value=" TOYOTA VANNETTE	"> TOYOTA VANNETTE </option>
+                                <option value=" TRACTOR"> TRACTOR</option>
+                                <option value=" TRANSIT BUS "> TRANSIT BUS </option>
+                                <option value=" TRIUMPH	"> TRIUMPH </option>
+                                <option value=" TROOPER JEEP	"> TROOPER JEEP </option>
+                                <option value=" TUYOTA"> TUYOTA</option>
+                                <option value=" TVR	"> TVR </option>
+                                <option value=" UNDER ACCORD"> UNDER ACCORD</option>
+                                <option value=" UNIT L200	"> UNIT L200 </option>
+                                <option value=" V WAGEN AUDI "> V WAGEN AUDI </option>
+                                <option value=" V-WAGEN SATANNA"> V-WAGEN SATANNA</option>
+                                <option value=" V/GOLF"> V/GOLF</option>
+                                <option value=" V/W BEETLE "> V/W BEETLE </option>
+                                <option value=" V/W COMODO		"> V/W COMODO </option>
+                                <option value=" V/W EUROVAN "> V/W EUROVAN </option>
+                                <option value=" V/W GOLF "> V/W GOLF </option>
+                                <option value=" V/W PARSSENT "> V/W PARSSENT </option>
+                                <option value=" V/W PARSSENTS "> V/W PARSSENTS </option>
+                                <option value=" V/W PASSAT "> V/W PASSAT </option>
+                                <option value=" V/W SURAN "> V/W SURAN </option>
+                                <option value=" V/W T4 TRANSPORTER BUS "> V/W T4 TRANSPORTER BUS </option>
+                                <option value=" V/W TOUARAG "> V/W TOUARAG </option>
+                                <option value=" V/WAGEN 80"> V/WAGEN 80</option>
+                                <option value=" V/WAGEN AMAZON	"> V/WAGEN AMAZON </option>
+                                <option value=" V/WAGEN AUDI	"> V/WAGEN AUDI </option>
+                                <option value=" V/WAGEN BETTLE"> V/WAGEN BETTLE</option>
+                                <option value=" V/WAGEN BORA "> V/WAGEN BORA </option>
+                                <option value=" V/WAGEN L 48"> V/WAGEN L 48</option>
+                                <option value=" V/WAGEN LT 28 BUS "> V/WAGEN LT 28 BUS </option>
+                                <option value=" V/WAGEN LT 28 P/UP"> V/WAGEN LT 28 P/UP</option>
+                                <option value=" V/WAGEN LT 31	"> V/WAGEN LT 31 </option>
+                                <option value=" V/WAGEN LT 40"> V/WAGEN LT 40</option>
+                                <option value=" V/WAGEN LT 45"> V/WAGEN LT 45</option>
+                                <option value=" V/WAGEN MINITRUCK	"> V/WAGEN MINITRUCK </option>
+                                <option value=" V/WAGEN P/UP	"> V/WAGEN P/UP </option>
+                                <option value=" V/WAGEN PASSAT	"> V/WAGEN PASSAT </option>
+                                <option value=" V/WAGEN POLO	"> V/WAGEN POLO </option>
+                                <option value=" V/WAGEN SHAROON "> V/WAGEN SHAROON </option>
+                                <option value=" V/WAGEN TOUAREG JEEP "> V/WAGEN TOUAREG JEEP </option>
+                                <option value=" V/WAGEN TRANSPORTER"> V/WAGEN TRANSPORTER</option>
+                                <option value=" V/WAGEN VERAGON	"> V/WAGEN VERAGON </option>
+                                <option value=" V/WAGON "> V/WAGON </option>
+                                <option value=" VAN DAF "> VAN DAF </option>
+                                <option value=" VANXALL ASTRAL "> VANXALL ASTRAL </option>
+                                <option value=" VANXHALL MIDI "> VANXHALL MIDI </option>
+                                <option value=" VAUXHALL "> VAUXHALL </option>
+                                <option value=" VAUXHALL ESTATE	"> VAUXHALL ESTATE </option>
+                                <option value=" VECTRA "> VECTRA </option>
+                                <option value=" VENTRO"> VENTRO</option>
+                                <option value=" VENUS"> VENUS</option>
+                                <option value=" VILLAGER MERCURY"> VILLAGER MERCURY</option>
+                                <option value=" VOLKS WAGEN LT35	"> VOLKS WAGEN LT35 </option>
+                                <option value=" VOLKS WAGEN PASSAT"> VOLKS WAGEN PASSAT</option>
+                                <option value=" VOLKS WAGEN POLO"> VOLKS WAGEN POLO</option>
+                                <option value=" VOLKSWAGEN"> VOLKSWAGEN</option>
+                                <option value=" VOLKSWAGEN BUS"> VOLKSWAGEN BUS</option>
+                                <option value=" VOLKSWAGEN JETTA"> VOLKSWAGEN JETTA</option>
+                                <option value=" VOLKSWAGEN SCHIROCO	"> VOLKSWAGEN SCHIROCO </option>
+                                <option value=" VOLKSWAGEN TRANSPORTER "> VOLKSWAGEN TRANSPORTER </option>
+                                <option value=" VOLKSWAGOON"> VOLKSWAGOON</option>
+                                <option value=" VOLKWAGEN BEATLE	"> VOLKWAGEN BEATLE </option>
+                                <option value=" VOLVO 200"> VOLVO 200</option>
+                                <option value=" VOLVO 240	"> VOLVO 240 </option>
+                                <option value=" VOLVO 240 DL "> VOLVO 240 DL </option>
+                                <option value=" VOLVO 240 GL	"> VOLVO 240 GL </option>
+                                <option value=" VOLVO 244"> VOLVO 244</option>
+                                <option value=" VOLVO 245	"> VOLVO 245 </option>
+                                <option value=" VOLVO 440"> VOLVO 440</option>
+                                <option value=" VOLVO 580	"> VOLVO 580 </option>
+                                <option value=" VOLVO 740"> VOLVO 740</option>
+                                <option value=" VOLVO 746 "> VOLVO 746 </option>
+                                <option value=" VOLVO 940 S/CAR"> VOLVO 940 S/CAR</option>
+                                <option value=" VOLVO 960 S/C"> VOLVO 960 S/C</option>
+                                <option value=" VOLVO B10M70"> VOLVO B10M70</option>
+                                <option value=" VOLVO BOX"> VOLVO BOX</option>
+                                <option value=" VOLVO BUS "> VOLVO BUS </option>
+                                <option value=" VOLVO LORRY FI6 "> VOLVO LORRY FI6 </option>
+                                <option value=" VOLVO S/ WAGON "> VOLVO S/ WAGON </option>
+                                <option value=" VOLVO S60"> VOLVO S60</option>
+                                <option value=" VOLVO S70"> VOLVO S70</option>
+                                <option value=" VOLVO S80"> VOLVO S80</option>
+                                <option value=" VOLVO TRUCK	"> VOLVO TRUCK </option>
+                                <option value=" VOLVO V40"> VOLVO V40</option>
+                                <option value=" VOLVO V70XCS/WAGON	"> VOLVO V70XCS/WAGON </option>
+                                <option value=" WAGON"> WAGON</option>
+                                <option value=" WALL DEER	"> WALL DEER </option>
+
+                                <option value=" WANHU KARY GO	"> WANHU KARY GO </option>
+                                <option value=" WINDSTAR FORD	"> WINDSTAR FORD </option>
+                                <option value=" X`S"> X`S</option>
+                                <option value=" XIN KIA "> XIN KIA </option>
+                                <option value=" YINHE AX100"> YINHE AX100</option>
+                                <option value=" YOKOMATO "> YOKOMATO </option>
+                                <option value=" YUGO	"> YUGO </option>
+                                <option value=" YUTONG"> YUTONG</option>
+                                <option value=" ZHONGYU "> ZHONGYU </option>
+                                <option value=" ZONG CHING	"> ZONG CHING </option>
+                                <option value=" ZONGMACE"> ZONGMACE</option>
+                                <option value=" ZOTYE"> ZOTYE</option>
+                                <option value=" ZOTYE NOMAD	"> ZOTYE NOMAD </option>
+                                <option value=" ZXAUTO"> ZXAUTO</option>
+
+                                <option value="121">121</option>
+                                <option value="3SERIES">3SERIES</option>
+                                <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                <option value="AUDI 100">AUDI 100</option>
+                                <option value="AUDI 90">AUDI 90</option>
+                                <option value="AURORA JEEP">AURORA JEEP</option>
+                                <option value="AUSTIN TIPPER">AUSTIN TIPPER</option>
+                                <option value="B M W 528">B M W 528</option>
+                                <option value="BENZ">BENZ</option>
+                                <option value="BOXER BM100">BOXER BM100</option>
+                                <option value="BOXERS	">BOXERS </option>
+                                <option value="BRICKLIN">BRICKLIN</option>
+                                <option value="BUSTER BUS	">BUSTER BUS </option>
+                                <option value="CERATO  1.61 S/C ">CERATO 1.61 S/C </option>
+                                <option value="CHANA">CHANA</option>
+                                <option value="CHEROKEE JEEP">CHEROKEE JEEP</option>
+                                <option value="CHEROOKE ">CHEROOKE </option>
+                                <option value="CHERRY	">CHERRY </option>
+                                <option value="CHEVROLET AVEO">CHEVROLET AVEO</option>
+                                <option value="CHEVROLET TRUCK">CHEVROLET TRUCK</option>
+                                <option value="CHRYSLER VOYAGER">CHRYSLER VOYAGER</option>
+                                <option value="CUSTOM">CUSTOM</option>
+                                <option value="CY 90 SPOKE ">CY 90 SPOKE </option>
+                                <option value="DAEWO LEGANZA">DAEWO LEGANZA</option>
+                                <option value="DAF 1700">DAF 1700</option>
+                                <option value="DAKOTA DODGE">DAKOTA DODGE</option>
+                                <option value="DATSUN 120Y">DATSUN 120Y</option>
+                                <option value="DATSUN 160B">DATSUN 160B</option>
+                                <option value="DATSUN 180B S/W ">DATSUN 180B S/W </option>
+                                <option value="DATSUN BUS ">DATSUN BUS </option>
+                                <option value="DATSUN NISSAN">DATSUN NISSAN</option>
+                                <option value="DATSUN PANEL VAN">DATSUN PANEL VAN</option>
+                                <option value="DATSUN PANEL VAN">DATSUN PANEL VAN</option>
+                                <option value="DATSUN PICK UP">DATSUN PICK UP</option>
+                                <option value="DAYANG">DAYANG</option>
+                                <option value="DAYLONG">DAYLONG</option>
+                                <option value="DE-DAMAK">DE-DAMAK</option>
+                                <option value="DEER 4X2 SINGLE CABIN P/UP ">DEER 4X2 SINGLE CABIN P/UP </option>
+                                <option value="DODGE">DODGE</option>
+                                <option value="DODGE NEON">DODGE NEON</option>
+                                <option value="DUKAR 3 WHEELER">DUKAR 3 WHEELER</option>
+                                <option value="DUKAR 3WHEELERS ">DUKAR 3WHEELERS </option>
+                                <option value="DYNA">DYNA</option>
+                                <option value="EXPERT VAN ORDINA">EXPERT VAN ORDINA</option>
+                                <option value="FAKA MERCEDES	">FAKA MERCEDES </option>
+                                <option value="FENCO	">FENCO </option>
+                                <option value="FIAT CROMA	">FIAT CROMA </option>
+                                <option value="FOED CLUB">FOED CLUB</option>
+                                <option value="FORD CLUBWAGEN">FORD CLUBWAGEN</option>
+                                <option value="FORD COUGAR">FORD COUGAR</option>
+                                <option value="FORD GALAXY">FORD GALAXY</option>
+                                <option value="FORD JEEP">FORD JEEP</option>
+                                <option value="FORD SIERRA">FORD SIERRA</option>
+                                <option value="FORLAND	">FORLAND </option>
+                                <option value="FOTON">FOTON</option>
+                                <option value="FREDERICH	">FREDERICH </option>
+                                <option value="FREIGHTLINER">FREIGHTLINER</option>
+                                <option value="GEELY MK ">GEELY MK </option>
+                                <option value="GLS">GLS</option>
+                                <option value="GLS JEEP">GLS JEEP</option>
+                                <option value="GMC JEEP">GMC JEEP</option>
+                                <option value="GMC P/UP">GMC P/UP</option>
+                                <option value="GOLF">GOLF</option>
+                                <option value="GOLF 1">GOLF 1</option>
+                                <option value="GOLF 11 ">GOLF 11 </option>
+                                <option value="GOLF PICK-UP">GOLF PICK-UP</option>
+                                <option value="GREAT WALL">GREAT WALL</option>
+                                <option value="HONDA ACURA">HONDA ACURA</option>
+                                <option value="HONDA CGL 125">HONDA CGL 125</option>
+                                <option value="HONDA CITY">HONDA CITY</option>
+                                <option value="HONDA CIVIC SHUTTLE">HONDA CIVIC SHUTTLE</option>
+                                <option value="HONDA CONCERTO	">HONDA CONCERTO </option>
+                                <option value="HONDA CONSERTO">HONDA CONSERTO</option>
+                                <option value="HONDA CRX">HONDA CRX</option>
+                                <option value="HONDA DIANG">HONDA DIANG</option>
+                                <option value="HONDA HALLA">HONDA HALLA</option>
+                                <option value="HONDA INTEGRA">HONDA INTEGRA</option>
+                                <option value="HONDA ODDYSSEY">HONDA ODDYSSEY</option>
+                                <option value="HONDA PASSPORT">HONDA PASSPORT</option>
+                                <option value="HONDA PRELUDE">HONDA PRELUDE</option>
+                                <option value="HONDA SUPER">HONDA SUPER</option>
+                                <option value="HONGQI ">HONGQI </option>
+                                <option value="HYUNDAI EXCEL">HYUNDAI EXCEL</option>
+                                <option value="HYUNDAI TERRACAN">HYUNDAI TERRACAN</option>
+                                <option value="INDIGO GLX">INDIGO GLX</option>
+                                <option value="INNOSON">INNOSON</option>
+                                <option value="ISUZU">ISUZU</option>
+                                <option value="ISUZU BEDFORD BUS">ISUZU BEDFORD BUS</option>
+                                <option value="ISUZU BUS">ISUZU BUS</option>
+                                <option value="ISUZU JEEP">ISUZU JEEP</option>
+                                <option value="JINSSUN">JINSSUN</option>
+                                <option value="KANCHEN">KANCHEN</option>
+                                <option value="KARIGO TRICYCLE ">KARIGO TRICYCLE </option>
+                                <option value="KASEA">KASEA</option>
+                                <option value="KIA OPTIMA">KIA OPTIMA</option>
+                                <option value="KIA OPTIMC">KIA OPTIMC</option>
+                                <option value="KIA PICANTO">KIA PICANTO</option>
+                                <option value="KIA SHUMA 11">KIA SHUMA 11</option>
+                                <option value="LADA NIVA">LADA NIVA</option>
+                                <option value="LAND MASTER">LAND MASTER</option>
+                                <option value="LIFAN">LIFAN</option>
+                                <option value="LONCIN	">LONCIN </option>
+                                <option value="LORRY">LORRY</option>
+                                <option value="M/BENZ">M/BENZ</option>
+                                <option value="M/BENZ  S500">M/BENZ S500</option>
+                                <option value="M/BENZ C240">M/BENZ C240</option>
+                                <option value="M/BENZ E 200 ">M/BENZ E 200 </option>
+                                <option value="M/BENZ E200">M/BENZ E200</option>
+                                <option value="M/BENZ S550">M/BENZ S550</option>
+                                <option value="M/BENZ V/BOOT">M/BENZ V/BOOT</option>
+                                <option value="M/BENZ V/BOOT 230">M/BENZ V/BOOT 230</option>
+                                <option value="M/BENZE ML430">M/BENZE ML430</option>
+                                <option value="M/DIESEL TRUCK">M/DIESEL TRUCK</option>
+                                <option value="MAC CHUKS">MAC CHUKS</option>
+                                <option value="MALIBU CHEVROLET">MALIBU CHEVROLET</option>
+                                <option value="MAN TIPPER">MAN TIPPER</option>
+                                <option value="MAN TRUCK">MAN TRUCK</option>
+                                <option value="MARCHETTI TERRIN">MARCHETTI TERRIN</option>
+                                <option value="MASOBI	">MASOBI </option>
+                                <option value="MAZDA BUS">MAZDA BUS</option>
+                                <option value="MAZDA CABIN">MAZDA CABIN</option>
+                                <option value="MAZDA CABIN P/UP">MAZDA CABIN P/UP</option>
+                                <option value="MAZDA XEDO 36 ">MAZDA XEDO 36 </option>
+                                <option value="MERCEDE 1017 TRUCK">MERCEDE 1017 TRUCK</option>
+                                <option value="MERCEDES 1017 TUCK">MERCEDES 1017 TUCK</option>
+                                <option value="MERCEDES TRUCK">MERCEDES TRUCK</option>
+                                <option value="MERCEDES- BENZ 280">MERCEDES- BENZ 280</option>
+                                <option value="MERCEDES-BENZ 230T">MERCEDES-BENZ 230T</option>
+                                <option value="MERCEDES-BENZ 300">MERCEDES-BENZ 300</option>
+                                <option value="MERCEDES-BENZ 320">MERCEDES-BENZ 320</option>
+                                <option value="MERCEDES-BENZ C220">MERCEDES-BENZ C220</option>
+                                <option value="MERCEDES-BENZ E230">MERCEDES-BENZ E230</option>
+                                <option value="MERCEDES-BENZ E320	">MERCEDES-BENZ E320 </option>
+                                <option value="MERCURY COMM VAN">MERCURY COMM VAN</option>
+                                <option value="MIT LANCER">MIT LANCER</option>
+                                <option value="MIT SPACE RUNNER">MIT SPACE RUNNER</option>
+                                <option value="MIT TREDIA">MIT TREDIA</option>
+                                <option value="MITS P/UP">MITS P/UP</option>
+                                <option value="MITSUBISHI BUS">MITSUBISHI BUS</option>
+                                <option value="MITSUBISHI ECLIPSE ">MITSUBISHI ECLIPSE </option>
+                                <option value="MITSUBISHI L200 PICK-UP VAN">MITSUBISHI L200 PICK-UP VAN</option>
+                                <option value="MITSUBISHI L300">MITSUBISHI L300</option>
+                                <option value="MITSUBISHI MINI BUS">MITSUBISHI MINI BUS</option>
+                                <option value="ML 320 JEEP">ML 320 JEEP</option>
+                                <option value="NANJING SOYAT">NANJING SOYAT</option>
+                                <option value="NISSAN ALMERA">NISSAN ALMERA</option>
+                                <option value="NISSAN B/BIRD">NISSAN B/BIRD</option>
+                                <option value="NISSAN CABIN	">NISSAN CABIN </option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR">NISSAN CABSTAR</option>
+                                <option value="NISSAN CABSTAR P/UP ">NISSAN CABSTAR P/UP </option>
+                                <option value="NISSAN CARBALL">NISSAN CARBALL</option>
+                                <option value="NISSAN CENTRAL">NISSAN CENTRAL</option>
+                                <option value="NISSAN DIESEL	">NISSAN DIESEL </option>
+                                <option value="NISSAN INFINITY">NISSAN INFINITY</option>
+                                <option value="NISSAN MAXINIA">NISSAN MAXINIA</option>
+                                <option value="NISSAN MURANO	">NISSAN MURANO </option>
+                                <option value="NISSAN PATHFINDER">NISSAN PATHFINDER</option>
+                                <option value="NISSAN QUEST">NISSAN QUEST</option>
+                                <option value="NISSAN SECTRA">NISSAN SECTRA</option>
+                                <option value="NISSAN SERENA">NISSAN SERENA</option>
+                                <option value="NISSAN XTERRA">NISSAN XTERRA</option>
+                                <option value="OLDSMOBILE">OLDSMOBILE</option>
+                                <option value="OPEL">OPEL</option>
+                                <option value="OTHERS ">OTHERS </option>
+                                <option value="PASSAT V/WAGEN">PASSAT V/WAGEN</option>
+                                <option value="PEUGEOT 305">PEUGEOT 305</option>
+                                <option value="PGT 504">PGT 504</option>
+                                <option value="PGT 505 ">PGT 505 </option>
+                                <option value="PRIMERA">PRIMERA</option>
+                                <option value="QLINK	">QLINK </option>
+                                <option value="RENAULT LAGUNA	">RENAULT LAGUNA </option>
+                                <option value="ROVEER 75">ROVEER 75</option>
+                                <option value="ROVER 620">ROVER 620</option>
+                                <option value="SCODA">SCODA</option>
+                                <option value="SCODA OCTAVIA">SCODA OCTAVIA</option>
+                                <option value="SEAT TOLEDO">SEAT TOLEDO</option>
+                                <option value="SHACMAN">SHACMAN</option>
+                                <option value="SHARKMAN">SHARKMAN</option>
+                                <option value="SIMBA KARY-GO">SIMBA KARY-GO</option>
+                                <option value="SINOKI">SINOKI</option>
+                                <option value="SKYGO">SKYGO</option>
+                                <option value="SPEED11 TEC ">SPEED11 TEC </option>
+                                <option value="STEYR">STEYR</option>
+                                <option value="STYRE">STYRE</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZIKI SUPRA">SUZIKI SUPRA</option>
+                                <option value="SUZUKI HAOJUE">SUZUKI HAOJUE</option>
+                                <option value="TEC MOTORCYCLE">TEC MOTORCYCLE</option>
+                                <option value="TEC SPEED  ">TEC SPEED </option>
+                                <option value="TEREX ">TEREX </option>
+                                <option value="TOYOTA  BUS">TOYOTA BUS</option>
+                                <option value="TOYOTA AVALON">TOYOTA AVALON</option>
+                                <option value="TOYOTA AVENSIS">TOYOTA AVENSIS</option>
+                                <option value="TOYOTA CABSTER	">TOYOTA CABSTER </option>
+                                <option value="TOYOTA CARINA">TOYOTA CARINA</option>
+                                <option value="TOYOTA CARINA E">TOYOTA CARINA E</option>
+                                <option value="TOYOTA COROLLA">TOYOTA COROLLA</option>
+                                <option value="TOYOTA DYNA">TOYOTA DYNA</option>
+                                <option value="TOYOTA HIACE">TOYOTA HIACE</option>
+                                <option value="TOYOTA HYLANDER">TOYOTA HYLANDER</option>
+                                <option value="TOYOTA LITEACE">TOYOTA LITEACE</option>
+                                <option value="TOYOTA PICKUP">TOYOTA PICKUP</option>
+                                <option value="TOYOTA PICNIC">TOYOTA PICNIC</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA RAV 4">TOYOTA RAV 4</option>
+                                <option value="TOYOTA SEQUA">TOYOTA SEQUA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SIENNA">TOYOTA SIENNA</option>
+                                <option value="TOYOTA SOLARA">TOYOTA SOLARA</option>
+                                <option value="TOYOTA SUPRA">TOYOTA SUPRA</option>
+                                <option value="TOYOTA VENTURE">TOYOTA VENTURE</option>
+                                <option value="TRONG">TRONG</option>
+                                <option value="TRUCK">TRUCK</option>
+                                <option value="V/BOOT ">V/BOOT </option>
+                                <option value="V/WAGEN BUS (MINI)	">V/WAGEN BUS (MINI) </option>
+                                <option value="V/WAGEN SANTANA">V/WAGEN SANTANA</option>
+                                <option value="VESPER">VESPER</option>
+                                <option value="VILLAGER">VILLAGER</option>
+                                <option value="VOLKSWAGEN GOLF">VOLKSWAGEN GOLF</option>
+                                <option value="VOLKWAGEN PARATI HL">VOLKWAGEN PARATI HL</option>
+                                <option value="VOLVO">VOLVO</option>
+                                <option value="VOLVO 240 GLT	">VOLVO 240 GLT </option>
+                                <option value="VOLVO 460 ">VOLVO 460 </option>
+                                <option value="VOLVO 760 ">VOLVO 760 </option>
+                                <option value="VOLVO 850">VOLVO 850</option>
+                                <option value="XINKAI">XINKAI</option>
+                                <option value="XTERRA">XTERRA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YAMAHA">YAMAHA</option>
+                                <option value="YOUNGMAN">YOUNGMAN</option>
+                                <option value="ZHONEGYU">ZHONEGYU</option>
+                            </select>
+                            <input type="text" name="oldPlateName" id="oldPlateId" placeholder="Old plate number"
+                                class="form-control form_field_border">
+                            <input type="text" name="ColorName" id="ColorId" placeholder="Vehicle Color"
+                                class="form-control form_field_border">
+
+                            <select id="VehicleFuelTypeId" name="VehicleFuelTypeName"
+                            class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value="" selected="selected"> -- Select Fuel Type --</option>
+                                <option value="Petrol"> Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Bio-Fuel">Bio-Fuel</option>
+                                <option value="Others">Others</option>
+
+                            </select>
+
+                            <select id="YearOfManufactureId" name="YearOfManufactureName"
+                            class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value=""> -- Select Year of Manufacture --</option>
+                                <option value="1979">1979</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="modelName" id="modelId" placeholder="Vehicle Model"
+                                class="form-control form_field_border">
+                            <input type="text" name="engineNoName" id="engineNoId" placeholder="Engine number"
+                                class="form-control form_field_border">
+                            <select class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value="">-- Select vehicle type/group --</option>
+                                <option value="Bus">Bus</option>
+                                <option value="Crane">Crane</option>
+                                <option value="Motor cycle">Motor cycle</option>
+                                <option value="Pick up">Pick up</option>
+                                <option value="Salon">Salon</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Tractor">Tractor</option>
+                                <option value="8">Tricycle</option>
+                                <option value="Tricycle">Truck</option>
+                                <option value="Van">Van</option>
+                                <option value="Wagon">Wagon</option>
+                            </select>
+                            <input type="text" name="chasisNoName" id="chasisNoId" placeholder="Chasis number"
+                                class="form-control form_field_border" required="">
+
+                            <select class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
+                                <option value="">-- Select Engine Capacity --</option>
+                                <option value="4">Above 3.0</option>
+                                <option value="1">Below 1.6</option>
+                                <option value="2">Between 1.6 and 2.0</option>
+                                <option value="3">Between 2.1 and 3.0</option>
+                            </select>
+
+                            <input type="text" name="TankCapacityName" id="TankCapacityId" placeholder="Tank Capacity"
+                            class="form-control form_field_border">
+                        </div>
+
+                        <!-- <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                            <textarea name="contact-message" id="textarea_message" placeholder="Write message" rows="4"
+                                class="form-control"></textarea>
+                        </div> -->
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <button id="btn_submit" type="submit" title="Next to owner information">Save and Next</button><a href="vreg_owner.html">&nbsp;&nbsp;&nbsp;Next...</a>
+                        </div>
+                        <div class="alert-msg" id="alert-msg"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="padding-100"></div>
+            <div class="padding-30"></div>
+
+            <!-- Map -->
+            <!-- <div class="container-fluid no-padding map-section">
+                <div id="map-canvas-contact" class="map-canvas" data-lat="-37.817214" data-lng="144.955925"
+                    data-string="16122 Collins Street West, Victoria 8007 Australia" data-zoom="12"></div>
+            </div> -->
+            <!-- Map /- -->
+
+        </main>
+
+
+        <!-- Footer Section -->
+        <footer class="footer-main container-fluid no-padding">
+            <!-- Container -->
+            <div class="container">
+                <div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <a href="#" title="Logo"><img src="images/Benue-State-Footer-Logo.png" alt="Logo" /></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="register.html" title="Registration">Registration</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="renewal.html" title="Renewals">Renewals</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="ownership.html" title="Ownership">Change of ownership</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <!-- Widget Link -->
+                        <aside class="widget widget_link">
+                            <h3 class="widget-title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="plates.html.html" title="Plates">Plate numbers</a></li>
+
+                            </ul>
+                        </aside><!-- Widget Link /- -->
+                    </div>
+                </div>
+            </div><!-- Container /- -->
+
+            <!-- Copyright -->
+            <div class="container-fluid no-padding copyright">
+                <p><i class="fa fa-copyright"></i> BSVRTS. ALL RIGHTS RESERVED</p>
+            </div><!-- Copyright /- -->
+        </footer><!-- Footer Section /- -->
+
+    </div>
+
+    <!-- JQuery v1.12.4 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- Library - Js -->
+    <script src="libraries/lib.js"></script>
+
+    <!-- Library - Google Map API -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script> -->
+
+    <!-- Library - Theme JS -->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
