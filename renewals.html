@@ -122,9 +122,9 @@
 
                             <li><a href="index.html" title="About">Home</a></li>
                             <li><a href="about.html" title="About">About</a></li>
-                            <li><a href="vreg.html" title="Vehicle Registration">Vehicle Registration</a></li>
+                            <li><a href="login.html" title="Vehicle Registration">Vehicle Registration</a></li>
                             <li><a href="renewals.html" title="Renew vehicle documents">Renewals</a></li>
-                            <li><a href="change_ownership.html" title="Change vehicle ownership">Change Ownership</a></li>
+                            <li><a href="login.html" title="Change vehicle ownership">Change Ownership</a></li>
                             <!-- <li class="dropdown">
 								<a href="inventory.html" title="Inventory" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">inventory</a>
 								<i class="ddl-switch fa fa-angle-down"></i>
@@ -185,9 +185,19 @@
             <div class="container-fluid no-padding contact-section">
                 <!-- Container -->
                 <div class="container">
-                    <h3>Vehicle Renewal Details</h3>
+                    <h3>Vehicle Renewal Login Details</h3>
                     <form class="row">
                         <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="phone" id="phoneId" placeholder="Phone Number"
+                                class="form-control form_field_border" required="">
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" name="chasses" id="firstNameId" placeholder="Last 4 digits of CHASSIS / VIN"
+                                class="form-control form_field_border" required="">
+                        </div>
+
+                        <!-- <div class="form-group col-md-6 col-sm-6 col-xs-12">
                             <select id="vehicleOwnerId" name="vehicleOwnerName" class="" required="" style="height: 55px; width: 100%; margin-bottom: 30px;">
                                 <option value=""> -- Owner means of Identotfication -- </option>
                                 <option value="Company RC Number">Company RC Number</option>
@@ -1064,7 +1074,7 @@
 
                                 <input type="text" name="cityName" id="cityId"
                                     placeholder="City/Town" class="form-control form_field_border">
-                            </div>
+                            </div> -->
 
                            
 
@@ -1075,7 +1085,8 @@
 
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <button id="btn_submit" type="submit"
-                                        title="Next to attach renewal documents">Save and next</button><a href="renewals_docs.html">&nbsp;&nbsp;&nbsp;Next...</a>
+                                        title="Submit login details">Submit</button>
+                                        <!-- <a href="renewals_docs.html">&nbsp;&nbsp;&nbsp;Next...</a> -->
                             </div>
                             <div class="alert-msg" id="alert-msg"></div>
                     </form>
@@ -1128,7 +1139,7 @@
 						<aside class="widget widget_link">
 							<h3 class="widget-title">QUICK LINKS</h3>
 							<ul>
-								<li><a href="change_ownership.html" title="Ownership">Change of ownership</a></li>
+								<li><a href="login.html" title="Ownership">Change of ownership</a></li>
 								
 							</ul>
 						</aside><!-- Widget Link /- -->

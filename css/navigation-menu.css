@@ -55,7 +55,7 @@
 	transition: all 1s ease 0s;
 }
 .ow-navigation.navbar-default .navbar-nav > li > a {
-	padding: 22px 5px; /* It was 15 px by default */
+	padding: 22px 1px; /* It was 22px 15 px by default */
 	font-weight: bold;
 	position: relative;
 }
